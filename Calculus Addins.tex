@@ -41,17 +41,7 @@ MA4005 Syllabus
 iterative methods. Extension to non-linear systems using Newton's method.
 \end{itemize}
 \newpage
-\subsection*{Trigonometric Subsititution}
-\[\int\frac{dx}{\sqrt{a^2-x^2}}\]
 
-\[x=a\sin(\theta),\quad dx=a\cos(\theta)\,d\theta, \quad \theta=\arcsin\left(\frac{x}{a}\right)\]
-
-{\large
-\begin{eqnarray}
-\int\frac{dx}{\sqrt{a^2-x^2}} & = \int\frac{a\cos(\theta)\,d\theta}{\sqrt{a^2-a^2\sin^2(\theta)}}\\ \nonumber &= \int\frac{a\cos(\theta)\,d\theta}{\sqrt{a^2(1-\sin^2(\theta))}} \\ \nonumber
-& = \int\frac{a\cos(\theta)\,d\theta}{\sqrt{a^2\cos^2(\theta)}} \\ &= \int d\theta=\theta+C \\ \nonumber &=\arcsin\left(\frac{x}{a}\right)+C
-\end{eqnarray}
-}
 
 \subsection*{Augmented Matrices}
 Given the matrices $A$ and $B$, where
@@ -143,15 +133,6 @@ Specifically, a matrix is in row echelon form if
 \subsection*{Newton-Raphson Method}
 \[x_{1} = x_0 - \frac{f(x_0)}{f'(x_0)}\]
 \[x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} \]
-
-\section*{Numerical Integration}
-Numerical integration constitutes a broad family of algorithms for calculating the numerical value of a definite integral, and by extension, the term is also sometimes used to describe the numerical solution of differential equations.
-\subsection*{Numerical Integration: Simpson's Rule}
-\[\int_{a}^{b} f(x) \, dx \approx \frac{b-a}{6}\left[f(a) + 4f\left(\frac{a+b}{2}\right)+f(b)\right].\]
-
-
-\subsection*{Trapezoidal Rule}
-\[\int_{a}^{b} f(x)\, dx \approx (b-a)\frac{f(a) + f(b)}{2}\]
 
 %-------------------------------%
 \subsection*{Laplacian Analysis: convolution}
