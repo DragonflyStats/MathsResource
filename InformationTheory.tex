@@ -7,3 +7,28 @@ as to (losslessly) store it using as few bits as possible.
  
 Coding: This refers to the idea of adding redundancy to a source of information, so that the
 original message can be recovered if some of the stored bits are corrupted.
+
+
+ULCIS 1 - Information Theory
+ 
+
+Channel capacity is the tightest upper bound on the amount of information that can be reliably transmitted over a communications channel. By the noisy-channel coding theorem, the channel capacity of a given channel is the limiting information rate (in units of information per unit time) that can be achieved with arbitrarily small error probability.
+
+Information theory defines the notion of channel capacity and provides a mathematical model by which one can compute it. The key result states that the capacity of the channel, as defined above, is given by the maximum of the mutual information between the input and output of the channel, where the maximization is with respect to the input distribution
+ 
+Formal definition
+
+
+Let X represent the space of signals that can be transmitted, and Y the space of signals received, during a block of time over the channel. Let
+be the conditional distribution function of Y given X. Treating the channel as a known statistic system, pY | X(y | x) is an inherent fixed property of the communications channel (representing the nature of the noise in it).
+ 
+Under these constraints, next maximize the amount of information, or the message, that one can communicate over the channel.
+The appropriate measure for this is the mutual information I(X;Y), and this maximum mutual information is called the channel capacity.
+
+Nyquist frequency
+In signal processing, the Nyquist rate is two times the bandwidth of a bandlimited signal or a bandlimited channel.
+This term is used to mean two different things under two different circumstances:
+1)as a lower bound for the sample rate for alias-free signal sampling and
+2)as an upper bound for the symbol rate across a bandwidth-limited baseband channel such as a telegraph line
+or passband channel such as a limited radio frequency band or a frequency division multiplex channel.
+ 
