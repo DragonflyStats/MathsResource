@@ -1,0 +1,80 @@
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{framed}
+\usepackage{graphics}
+
+\begin{document}
+
+\begin{frame}
+\Huge
+\[ \mbox{Statistics and Probability} \]
+\LARGE
+\[ \mbox{Discrete Random Variables} \]
+\bigskip
+\Large
+\[ \mbox{www.Stats-Lab.com} \]
+\[ \mbox{Twitter: @StatsLabDublin} \]
+\bigskip
+
+\end{frame}
+% Financial Mathematics
+% Schaum Book Exercise 4:30
+%------------------------------------------%
+\begin{frame}
+\frametitle{Compound Interest}
+\Large
+\begin{itemize}
+\item Interest rate $r_{(12)}$ = $9\%$
+\item Principal $A(0)$ (also $P$) = $\$2000$
+\item Value at the end of period $A(t)$ = $\$3000$
+\end{itemize}
+\end{frame}
+%------------------------------------------%
+
+\begin{frame}
+\frametitle{Compound Interest}
+\vspace{-2cm}
+\Large
+\[ Log_e(1.5) = n\times Log_e(1.0075)\]
+\end{frame}
+%------------------------------------------%
+
+
+\begin{frame}
+\frametitle{Compound Interest}
+\vspace{-2cm}
+\Large
+\begin{itemize}
+\item period in terms of months
+
+mt= 54.265
+
+\item period in terms of years
+t = 4.522 years
+
+\item Re-expressing
+($0.522 \times 365 = 190$ days approximately)
+\end{itemize}
+\end{frame}
+%------------------------------------------%
+\end{document}
+
+Workings
+
+> log(1.4)/log(1.025)
+[1] 13.62643
+> log(1.4)/log(1.03)
+[1] 11.38315
+> log(1.4)/log(1.01)
+[1] 33.81518
+> log(1.4)/log(1.0075)
+[1] 45.03099
+> log(1.5)/log(1.0075)
+[1] 54.26449
+> (log(1.5)/log(1.0075))/12
+[1] 4.522041
+> 0.522*365
+[1] 190.53
+> 
