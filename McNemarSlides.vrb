@@ -1,0 +1,14 @@
+\large
+\texttt{mcnemar.test() }
+\begin{framed}
+\begin{verbatim}
+Effect <-
+matrix(c(101,121,59,33),
+       nrow = 2,
+       dimnames = list(
+        "Before" = c("Present", "Absent"),
+        "After" = c("Present", "Absent")))
+
+\end{verbatim}
+\end{framed}
+
