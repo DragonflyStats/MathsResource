@@ -40,7 +40,7 @@
 \vspace{1cm}
 \large \bf {FACULTY OF SCIENCE AND ENGINEERING} \\[0.5cm]
 \normalsize DEPARTMENT OF MATHEMATICS AND STATISTICS \\[1.25cm]
-\large \bf {END OF SEMESTER EXAMINATION PAPER 2015} \\[1.5cm]
+\large \bf {END OF SEMESTER EXAMINATION PAPER 2016} \\[1.5cm]
 \end{center}
 
 \begin{tabular}{ll}
@@ -146,7 +146,7 @@ Students must attempt any 4 questions from 5.}
 \newpage
 \section*{Question 3}
 	%=================================================================%
-	\subsection*{Part A. System of Linear Equations}
+	\subsection*{Part A. System of Linear Equations (6 Marks)}
  Consider the linear system
 		\begin{align*}
 		x_1 + x_3 &= 4\\
@@ -168,6 +168,51 @@ Students must attempt any 4 questions from 5.}
 %		\end{align*}
 %		What can you say about its solution set?%\marks{4}
 
+\subsection*{Part B. Row-Echelon Form of a Matrix (4 Marks)}
+Consider the matrices $U,V,W$ and $X$ presented below. For each matrix state one reason why that matrix in not in row-echelon form. Provide distinct answers for each of the four matrices.
+\[
+U = \begin{pmatrix}
+1&2 & 6  &3 & 5
+\\  0&1&4 &0 & 6
+\\  0&1&2 &1 & 7
+\\  0&0&1 &1 & 7
+\end{pmatrix} \qquad  V = \begin{pmatrix}
+1&1 & 6  &8 & 5
+\\  0&2&6 &0 & 6
+\\  0&0&1 &1 & 7
+\\  0&0&0 &1 & 7
+\end{pmatrix}
+\]
+
+\[
+W = \begin{pmatrix}
+1&1 & 6  &8 & 5
+\\  0&1&6 &0 & 6
+\\  0&0&0 &1 & 7
+\\  0&0&1 &1 & 7
+\end{pmatrix} \qquad X = \begin{pmatrix}
+0&0&0 &0 & 0\\
+1&1 & 6  &8 & 5
+\\  0&1&6 &0 & 6
+\\  0&0&0 &0 & 1
+
+\end{pmatrix}
+\]
+\smallskip
+\noindent (\textbf{Marking Scheme}: \textit{$4 \times 1$ Marks where 1 Mark is awarded for each valid and distinct reason})
+
+%=================================================================%
+
+\subsection*{Part C. Distance from Planes (6 Marks)}	
+
+%2011 Question 2
+\begin{itemize}
+\item[(i)] (3 Marks) Give the general form of the equation of the plant $\pi$ in $\mathbb{R}^3$ passing throughthe point $P_0 =(1,0,2)$ with the vector $n=(-5,3,2)$ as the normal.
+
+
+\item[(ii)] (3 Marks) Show that the point $Q=(1,-1,1)$ does not lie in the plane $\pi$ and find its distance from $\pi$.
+\end{itemize}
+
 %==========================================================================================%
 \newpage
 \section*{Question 4}
@@ -181,10 +226,69 @@ Students must attempt any 4 questions from 5.}
 		
 		\medskip\item[(ii)] Calculate the scalar triple product  $u\cdot(v \times w)$.%\marks{3}
 	\end{itemize}
+	
+	
+	\subsection*{Part B. Orthonormal Projections (8 Marks)}
+	%------------------------------------------------%
+	%	
+	%	Orthonormal Projection
+	%	Orthogonal Projection
+	%================================================ %
+	If
+	\begin{equation*}
+	\vec{u}=\left[ \begin{array}{c} 1 \\ 2 \\ 3 \end{array}\right],\qquad 
+	\vec{v}=\left[ \begin{array}{c} -1 \\ 0 \\ 4 \end{array}\right],
+	\end{equation*}
+%	\[u=(1,0,3);\qquad a=(3,5,7,)\]
+	
+\begin{itemize}
+	\item[(i)]  find the vector component of $u$ along $a$, $proj_{a}u$ and the
+	vector orthogonal component to $a$;
+	
+	\item[(ii)]   calculate the norm of $proj_a u$ and the norm of $u-proj_a u$;
+	
+	\item[(iii)]   draw $proj_a u$ showing its direction and orientation.
+		\end{itemize}
+	\subsection*{Part C. Vector Calculations (7 Marks)}		
+ Prove that, for any $u,\:v\:\in\mathbb{R}^3$, %\marks{8}
+			$$(u\times v)\times w= (u\cdot w)v - (v\cdot w)u.$$
+			(It is sufficient to verify this property for one component.)
+
+	\subsection*{Part D. Vector Calculations (7 Marks)}
+			\begin{enumerate}
+				\item Find the general form of the equation of the plane $\pi$ in $\mathbb{R}^3$ which passes through the point 
+				$P=(3,1,6)$ and is orthogonal to the vector $n=(1,7,-2)$. %\marks{3}
+				
+				\item Show that the point $Q=(1,-1,1)$ does not lie in the plane $\pi$ and find its distance from $\pi$. %\marks{ 2}
+			\end{enumerate}
+
 %==========================================================================================%
 \newpage
 \section*{Question 5}
-
+	\subsection*{Part A. Vector Calculations (7 Marks)}
+ Let $A=\displaystyle\left(\begin{array}{ccc} 
+	2&\!\!\!-1&0\\
+	\!\!\!-1& 2&0\\
+	0& 0& 0\end{array}\right)$
+	
+	\begin{itemize}
+		\item[(i)] Determine the eigenvalues and corresponding eigenvectors of $A$.
+		
+		\medskip\item[(ii)]  Diagonalise $A$; i.e, give a matrix $P$ and a diagonal matrix $D$, such that $A=PDP^{-1}$.
+		
+		\medskip \item[(iii)]  Hence, evaluate $A^5$.
+	\end{itemize} \vspace{0.4cm}
+	
+		\subsection*{Part B. Addition of Vectors}
+		Prove that for any $u,\:v,\:\in\mathbb{R}^3$
+		and any $k\in\mathbb{R}$ we have
+\begin{itemize}
+	\item[(i)] $(u\times v)\times w= (u\cdot w)v - (v\cdot w)u$;
+			
+	\item[(ii)]  $(u+v)\times w=u\times w + v\times w$;
+			
+	\item[(iii)] $k(u\times v)=(ku)\times v = u\times (kv)$.
+\end{itemize} \vspace{0.4cm}
 \end{document}
 
 
