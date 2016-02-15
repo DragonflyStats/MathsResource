@@ -1,0 +1,192 @@
+
+
+\documentclass[a4paper,12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{eurosym}
+\usepackage{vmargin}
+\usepackage{amsmath}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{fancyhdr}
+%\usepackage{listings}
+\usepackage{amsmath,enumerate,ifthen}
+\usepackage{amssymb}
+\usepackage{framed}
+\usepackage{times}
+%\usepackage{bigints}
+
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2570}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{LastRevised=Wednesday, February 23, 2011 13:24:34}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{Language=American English}
+
+%\pagestyle{fancy}
+%\setmarginsrb{20mm}{0mm}{20mm}{25mm}{12mm}{11mm}{0mm}{11mm}
+%\lhead{MA4413} \rhead{Mr. Kevin O'Brien}
+%\chead{Statistics For Computing}
+%\input{tcilatex}
+
+\begin{document}
+\begin{center}
+\includegraphics[scale=0.65]{shieldtransparent2}
+\end{center}
+
+\begin{center}
+\vspace{1cm}
+\large \bf {FACULTY OF SCIENCE AND ENGINEERING} \\[0.5cm]
+\normalsize DEPARTMENT OF MATHEMATICS AND STATISTICS \\[1.25cm]
+\large \bf {END OF SEMESTER EXAMINATION PAPER 2015} \\[1.5cm]
+\end{center}
+
+\begin{tabular}{ll}
+MODULE CODE: MS4131 & SEMESTER: Spring 2016 \\[1cm]
+MODULE TITLE: Linear Algebra 1 & DURATION OF EXAM: 2.5 hours \\[1cm]
+LECTURER: Mr. Kevin O'Brien & GRADING SCHEME: 80 marks \\
+& \phantom{GRADING SCHEME:} \footnotesize {100\% of module grade} \\[0.8cm]
+EXTERNAL EXAMINER: Prof. J. King & \\
+\end{tabular}
+\bigskip
+\begin{center}
+{\bf INSTRUCTIONS TO CANDIDATES}
+\end{center}
+
+{\noindent \\ Scientific calculators approved by the University of Limerick can be used. \\
+%Formula sheet and statistical tables are provided at the end of the exam paper.\\
+Students must attempt any 4 questions from 5.}
+%==========================================================================================%
+\newpage
+\section*{Question 1}
+
+	\subsection*{Part A. Matrix Multiplication (4 Marks)}	
+	Given the matrices 
+	$$
+	A=\left(\begin{array}{ccccc} 
+	2&2&1&\!\!\!-1&4\end{array}
+	\right); \quad
+	B =\left(\begin{array}{cc} 
+	1&4\\0&5\\\!\!\!-1&0\\7&1\\1&3\end{array}
+	\right); \quad
+	C=\left(\begin{array}{c} 1\\2\end{array}
+	\right)
+	$$
+	calculate the products $AB$ and $CA$.
+	%----------------------------------------%
+	\subsection*{Part B. Diagonal Matrices (3 Marks)}	
+	Consider the following diagonal matrix D. In terms of the values $a$, $b$ and $c$ ;
+	
+	
+	\[D = \left(\begin{array}{ccc}
+		a & 0 & 0 \\ 
+		0 & b & 0 \\ 
+		0 & 0 & c
+	\end{array} \right)\]
+	\begin{itemize}
+		\item[(i)] (1 Mark) Write an expression for the trace of the matrix D.
+		\item[(ii)] (1 Mark) State the inverse of $D$, i.e. $D^{-1}$.
+		\item[(iii)] (1 Mark) State the matrix $D^3$.
+	\end{itemize}
+	\smallskip
+	%----------------------------------------%
+	\subsection*{Part C. Matrix Multiplication (4 Marks)}	
+		Suppose A is a lower triangular matrix of the form;
+		\[A = \left(
+		\begin{matrix}
+		a & 0 & 0 \\
+		b & c & 0 \\
+		d & e & f \\
+		\end{matrix} \right)
+		\]
+		
+		\begin{itemize}
+			\item[(i)] (1 Mark) State the transpose of A.
+			\item[(ii)] (2 Marks) Compute B where B = $ A \times A^{T}$. 
+			\item[(iii)] (1 Mark) B is a symmetric matrix. What is meant by this?
+		\end{itemize}
+%==========================================================================================%
+\newpage
+\section*{Question 2}
+	%===========================================================================%
+	\subsection*{Part A. Fundamental Theorem of Invertible Matrices (5 Marks)}
+	The Fundamental Theorem of Invertible Matrices states that a set of mathematical expressions concerning a $n\times n$ matrix $A$ are each equivalent to one another.
+	
+	\begin{itemize}
+		\item[(i)] ($4 \times 1$ Mark)
+		State any four of these expressions.
+		%\item[(i)] (1 Mark) What is the trace of a square matrix
+		\item[(ii)] (1 Mark) What is the rank of a matrix.
+	\end{itemize}
+	\subsection*{Part B. Invertible Matrices (5 Marks)}	
+	\noindent	Show that if $A$ is an $n\times n$ invertible matrix that satisfies 
+	$$
+	9A^3+A^2-3A=0
+	$$
+	where $A^n=\underbrace{A\ldots A}_{\textrm{$n$ times}}$, %_{\underbrace\textrm$n $ times$, 
+	$I$ is the $n\times n$  identity matrix and $0$ is the $n\times n$  zero matrix,
+	then the inverse of $A$ is given by  %\marks{4}
+	$$
+	A^{-1}=\frac13I+3A.
+	$$
+	\subsection*{Part C. Inverting a Matrix with E.R.O.s (5 Marks)}	
+	Find the inverse of the  matrix 
+	
+	\begin{equation*}
+	A=\left( \begin{array}{rrr}
+	1 & -2 & 4\\
+	1 & -4 & 1\\
+	-3 & 0 & -1
+	\end{array} \right).
+	\end{equation*}
+	using elementary row operations.
+%==========================================================================================%
+\newpage
+\section*{Question 3}
+	%=================================================================%
+	\subsection*{Part A. System of Linear Equations}
+ Consider the linear system
+		\begin{align*}
+		x_1 + x_3 &= 4\\
+		2x_1 + 4x_2 + x_3 &= -3\\
+		x_2 + 3x_3 &= 7.
+		\end{align*}
+		\begin{itemize}
+			\item[(i)] (1 Mark) Write down the coefficient matrix and the augmented matrix of this system. %\marks{4}
+			
+			\item[(ii)] (1 Mark) What can you say about the solution set of the system? Justify your answer. %\marks{4}
+			
+			\item[(iii)] (4 Marks) Solve the system of equations, using any appropriate method. %\marks{6}
+		\end{itemize}
+%		\item Consider the homogeneous system:
+%		\begin{align*}
+%		x_1 + x_3 &= 0\\
+%		2x_1 + 4x_2 + x_3 &= 0\\
+%		x_2 + 3x_3 &= 0.
+%		\end{align*}
+%		What can you say about its solution set?%\marks{4}
+
+%==========================================================================================%
+\newpage
+\section*{Question 4}
+	\subsection*{Part A. Vector Calculations (7 Marks)}
+	Consider the three vectors in $\mathbb{R}^3$:
+	$$
+	u = (1, 2, 0), \quad v = (0, 1, 3),\quad w = (1, 2, 3).
+	$$
+		\begin{itemize}
+			\item[(i)] Evaluate $\|u\|$, $\|v\|$, $u\cdot v$, $u\times v$ and the angle between $u$ and $v$. %\marks{3}
+		
+		\medskip\item[(ii)] Calculate the scalar triple product  $u\cdot(v \times w)$.%\marks{3}
+	\end{itemize}
+%==========================================================================================%
+\newpage
+\section*{Question 5}
+
+\end{document}
+
+
+
+
