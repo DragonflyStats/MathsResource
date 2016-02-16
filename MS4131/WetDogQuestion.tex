@@ -337,7 +337,19 @@ Let $v= (v_1, v_2,v_3)$ be a vector in $\mathbb{R}^3$ and $k$ be a scale
 
 \[ 
 \begin{align}|A| = \begin{vmatrix} a & b & c\\d & e & f\\g & h & i \end{vmatrix} \]
+
+
 \end{document}
+
+%============================================%
+A = matrix(sample(-5:7,9,replace=T),nrow=3)
+det(A)
+
+while(det(A) != 4){
+   A = matrix(sample(-5:7,9,replace=T),nrow=3)
+   }
+
+
 
 
 
