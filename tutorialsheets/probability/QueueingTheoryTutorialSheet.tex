@@ -1,0 +1,46 @@
+\documentclass[]{report}
+
+\voffset=-1.5cm
+\oddsidemargin=0.0cm
+\textwidth = 480pt
+
+\usepackage{framed}
+\usepackage{subfiles}
+\usepackage{enumerate}
+\usepackage{graphics}
+\usepackage{newlfont}
+\usepackage{eurosym}
+\usepackage{amsmath,amsthm,amsfonts}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+\begin{document}
+\subsection*{MathsResource.github.io - Queueing Theory Tutorial Sheet }
+\subsection*{Question 1}
+Jobs are sent to a supercomputer at a rate of 10 per hour and take the supercomputer on average 4 minutes to process. We will assume that the number of arrivals is $X_a \sim \text{Poisson}(\lambda_a)$ and the processing (i.e., service) time is $T_s \sim \text{Exponential}(\lambda_s)$. This leads to an $M/M/1$ system.\\[-0.2cm]
+\begin{enumerate}[(a)]
+
+\item  Let $T$ be the total time in the system - what distribution has $T$?  \item  What is the average time spent in the system? Calculate $Sd(T)$ also.  \item  How many jobs are in the system on average? \textit{(hint: Little's law)}   \item  From the time the job is sent, what is the probability that it takes more than 15 minutes to complete?   \item  From the time the job enters the processor (i.e., service component), what is the probability that it takes more than 15 minutes to complete?  \item  What is the average number of jobs completed in a 3 hour period of operation? \textit{(hint: Burke's theorem)}  \item  What is the probability that more than 40 jobs are completed in a 3 hour period? \textit{(hint: Burke's theorem)}
+\end{enumerate}
+
+
+\subsection*{Question 2}
+Consider an $M/M/1$ system with arrivals $X_a \sim \text{Poisson}(\lambda_a=3 \text{ / minute})$ and service time \\$T_s \sim \text{Exponential}(\lambda_s=4 \text{ / minute})$. Calculate the following:\\[-0.2cm]
+\begin{enumerate}[(a)]
+
+\item  The expected time spent in the system.  \item  The expected time spent in the queue component.  \item  The expected number of individuals in the system.   \item  The expected number of individuals in the queue component.  \item  The utilisation factor.  \item  The probability that an individual spends more than 2 minutes in the system.  \item  The probability that less than 3 individuals exit the system in a 1 minute period.
+\end{enumerate}
+
+
+
+\newpage
+\subsection*{Question 3}
+Customers arrive to a deli counter at a rate of 12 per hour. On average it takes 3 minutes to serve a customer at this counter. Customers then exit and head to another counter to pay. It takes 1 minute to deal with a customer at this counter. We will assume that arrivals have a Poisson$(\lambda_a)$ distribution and service times have Exponential$(\lambda_{s1})$ and Exponential$(\lambda_{s2})$ distributions respectively (hint: this is a sequence of two $M/M/1$ systems).\\[-0.2cm]
+
+\begin{enumerate}[(a)]
+\item  What is the average time spent in each sub-system?  \item  What is the average total time spent in the system?  \item  How many customers are there (on average) in the system?   \\\item  Calculate the utilisation factor for each sub-system.  \item  What is the average total queueing time? (i.e., total time excluding service time)  \item  Calculate the probability that at least 20 people exit the shop (i.e., the whole system) in one hour.
+\end{enumerate}
+\end{document}
