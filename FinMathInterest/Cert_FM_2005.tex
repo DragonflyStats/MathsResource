@@ -1,0 +1,110 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\title{MatrixTutorial1}
+\author{kobriendublin }
+\date{October 2017}
+
+\begin{document}
+
+
+\section{Cert FM  April 2005 Q 9}
+Cert FM  April 2005 Q 9
+
+% April 2005 Question 9
+% September 2005 Question 4
+% September 2005 Question 5
+% Extra Material
+
+\subsection*{April 2005 Question 9}
+The one-year forward rate of interest at time t = 1 year is 5% per annum effective.
+
+The gross redemption yield of a two-year fixed interest stock issued at time t = 0 which pays coupons of 3% per annum annually in arrear and is redeemed at 102 is 5.5% per annum effective.
+
+The issue price at time t = 0 of a three-year fixed interest stock bearing coupons of  10% per annum payable annually in arrear and redeemed at par is £108.9 per £100 
+nominal.
+
+(i) Calculate the one-year spot rate per annum effective at time t = 0. [4]
+
+(ii) Calculate the one-year forward rate per annum effective at time t = 2 years.[3]
+
+(iii) Calculate the two-year par yield at time t = 0. [3]
+
+
+
+From two year stock information:
+
+\begin{eqnarray}
+Price &=& 3a_{-2} + 102v^2 at 5.5\%\\
+&=& (3 \times 1.84632) + (102 \times 0.89845)\\
+&=& 97.181\\
+\end{eqnarray}
+
+
+\[97.181 = \frac{3}{1+ i}+ \frac{3 + 102}{(1+ i)(1+f_{(1,1))}}\]
+
+\[97.1811 =\frac{103}{1+i_1}\]
+
+$i_1= 5.9877 \%$
+%-----------------------------------------%
+\subsection{September 2005 Question 4}
+
+\begin{itemize}
+\item The force of interest $\delta(t)$ at time t is $a +bt^2$ 
+where a and b are constants. 
+\item 
+An amount of £200 invested at time t = 0 accumulates to £210 
+at time t = 5 and £230 at time t = 10. 
+\item 
+Determine a and b. [5]
+\end{itemize}
+
+
+    
+
+    
+
+ln(1.05) = 5a + 41.667b
+ln(1.15) = 10a + 333.333b
+
+a= 0.008352
+
+b = 0.000168
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\subsection*{September 2005 Question 5}
+
+Calculate the present value of  £100 over ten years at the following rates of 
+interest/discount:
+(a)  a rate of interest of 5\% per annum convertible monthly
+(b)  a rate of discount of 5\% per annum convertible monthly
+(c)  a force of interest of 5\% per annum
+
+(ii) A 91-day treasury bill is bought for $98.91 and is redeemed at $100.  
+Calculate the annual effective rate of interest obtained from the bill.  [3]
+
+\begin{enumerate}[(a)]
+\item  $100 \times (1 +0.05/12)^{-12/10}= 60.716 $
+\item  $100 \times (1 -0.05/12)^{-12/10}= 60.590 $
+
+\item  $100 \times e^{-10\delta}= 60.6531$
+\end{enumerate}
+
+%--------------------%
+
+(ii) 98.91 = 100(1 +i)^{-91/365}
+
+\[ ln(1 + i) = \frac{-365}{91} \times ln \frac{98.91}{100} = 0.04396\]
+
+therefore 
+            i = 0.04494
+
+
+
+
+
+\end{document}
