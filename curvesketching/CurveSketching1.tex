@@ -1,0 +1,224 @@
+% % - http://tutorial.math.lamar.edu/Classes/CalcI/ShapeofGraphPtII.aspx
+% % -  http://tutorial.math.lamar.edu/Classes/CalcI/ShapeofGraphPtI.aspx
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+\textbf{The Shape of a Graph, Part I}\\
+In the previous section we saw how to use the derivative to determine the absolute minimum and maximum values of a function.  However, there is a lot more information about a graph that can be determined from the first derivative of a function.  We will start looking at that information in this section.  The main idea we’ll be looking at in this section we will be identifying all the relative extrema of a function. 
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+Let’s start this section off by revisiting a familiar topic from the previous chapter.  Let’s suppose that we have a function, .  We know from our work in the previous chapter that the first derivative, , is the rate of change of the function.  We used this idea to identify where a function was increasing, decreasing or not changing. 
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+Before reviewing this idea let’s first write down the mathematical definition of increasing and decreasing.  We all know what the graph of an increasing/decreasing function looks like but sometimes it is nice to have a mathematical definition as well.  Here it is.
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+Definition
+1.      Given any  and  from an interval  I with  if   then  is increasing on I.
+2.      Given any  and  from an interval  I with  if   then  is decreasing on I.
+
+This definition will actually be used in the proof of the next fact in this section.
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+Now, recall that in the previous chapter we constantly used the idea that if the derivative of a function was positive at a point then the function was increasing at that point and if the derivative was negative at a point then the function was decreasing at that point.  We also used the fact that if the derivative of a function was zero at a point then the function was not changing at that point.  We used these ideas to identify the intervals in which a function is increasing and decreasing.
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+
+The following fact summarizes up what we were doing in the previous chapter. 
+
+Fact
+1.      If   for every x on some interval I, then  is increasing on the interval.
+2.      If   for every x on some interval I, then  is decreasing on the interval.
+3.      If   for every x on some interval I, then  is constant on the interval.
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+The proof of this fact is in the Proofs From Derivative Applications section of the Extras chapter.
+
+Let’s take a look at an example.  This example has two purposes.  First, it will remind us of the increasing/decreasing type of problems that we were doing in the previous chapter.  Secondly, and maybe more importantly, it will now incorporate critical points into the solution.  We didn’t know about critical points in the previous chapter, but if you go back and look at those examples, the first step in almost every increasing/decreasing problem is to find the critical points of the function.
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+Example 1  Determine all intervals where the following function is increasing or decreasing.
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+Solution
+To determine if the function is increasing or decreasing we will need the derivative.
+
+
+Note that when we factored the derivative we first factored a “-1” out to make the rest of the factoring a little easier. 
+
+From the factored form of the derivative we see that we have three critical points : ,  , and .  We’ll need these in a bit.
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+\begin{itemize}
+\item We now need to determine where the derivative is positive and where it’s negative.  We’ve done this several times now in both the Review chapter and the previous chapter.  
+\item Since the derivative is a polynomial it is continuous and so we know that the only way for it to change signs is to first go through zero.
+\end{itemize}
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+	\begin{itemize}
+\item In other words, the only place that the derivative may change signs is at the critical points of the function.  We’ve now got another use for critical points. 
+\item So, we’ll build a number line, graph the critical points and pick test points from each region to see if the derivative is positive or negative in each region.
+\end{itemize}
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+Here is the number line and the test points for the derivative.
+% % ShapeOfGraphI_Ex1_G1
+
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+\begin{itemize}
+\item Make sure that you test your points in the derivative.
+\item One of the more common mistakes here is to test the points in the function instead!  
+\item Recall that we know that the derivative will be the same sign in each region.
+\item The only place that the derivative can change signs is at the critical points and we’ve marked the only critical points on the number line.
+\end{itemize}
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+So, it looks we’ve got the following intervals of increase and decrease.
+
+
+
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+\begin{itemize}
+\item In this example we used the fact that the only place that a derivative can change sign is at the critical points.
+\item  Also, the critical points for this function were those for which the derivative was zero.
+\item  However, the same thing can be said for critical points where the derivative doesn’t exist.  
+\end{itemize}
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+This is nice to know.  A function can change signs where it is zero or doesn’t exist.  In the previous chapter all our examples of this type had only critical points where the derivative was zero.  Now, that we know more about critical points we’ll also see an example or two later on with critical points where the derivative doesn’t exist.
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+Now that we have the previous “reminder” example out of the way let’s move into some new material.  Once we have the intervals of increasing and decreasing for a function we can use this information to get a sketch of the graph.  Note that the sketch, at this point, may not be super accurate when it comes to the curvature of the graph, but it will at least have the basic shape correct.  To get the curvature of the graph correct we’ll need the information from the next section.
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+Let’s attempt to get a sketch of the graph of the function we used in the previous example.
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+Example 2  Sketch the graph of the following function.
+
+Solution
+There really isn’t a whole lot to this example.  Whenever we sketch a graph it’s nice to have a few points on the graph to give us a starting place.  So we’ll start by the function at the critical points.  These will give us some starting points when we go to sketch the graph.  These points are,
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+
+Once these points are graphed we go to the increasing and decreasing information and start sketching.  For reference purposes here is the increasing/decreasing information.
+
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+Note that we are only after a sketch of the graph.  As noted before we started this example we won’t be able to accurately predict the curvature of the graph at this point.  However, even without this information we will still be able to get a basic idea of what the graph should look like.
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+To get this sketch we start at the very left of the graph and knowing that the graph must be decreasing and will continue to decrease until we get to .  At this point the function will continue to increase until it gets to .  However, note that during the increasing phase it does need to go through the point at  and at this point we also know that the derivative is zero here and so the graph goes through  horizontally.  Finally, once we hit  the graph starts, and continues, to decrease.   Also, note that just like at  the graph will need to be horizontal when it goes through the other two critical points as well.
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+Here is the graph of the function.  We, of course, used a graphical program to generate this graph, however, outside of some potential curvature issues if you followed the increasing/decreasing information and had all the critical points plotted first you should have something similar to this.
+% % ShapeOfGraphI_Ex2_G1
+
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+	Let’s use the sketch from this example to give us a very nice test for classifying critical points as relative maximums, relative minimums or neither minimums or maximums.
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+	\begin{itemize}
+\item Recall Fermat’s Theorem from the Minimum and Maximum Values section.  This theorem told us that all relative extrema (provided the derivative exists at that point of course) of a function will be critical points.\item  The graph in the previous example has two relative extrema and both occur at critical points as the Fermat’s Theorem predicted. \item Note as well that we’ve got a critical point that isn’t a relative extrema (  ).  This is okay since Fermat’s theorem doesn’t say that all critical points will be relative extrema. \item  It only states that relative extrema will be critical points.
+	\end{itemize}
+
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+In the sketch of the graph from the previous example we can see that to the left of  the graph is decreasing and to the right of  the graph is increasing and  is a relative minimum.  In other words, the graph is behaving around the minimum exactly as it would have to be in order for  to be a minimum.  The same thing can be said for the relative maximum at .  
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+	The graph is increasing on the left and decreasing on the right exactly as it must be in order for  to be a maximum.  Finally, the graph is increasing on both sides of  and so this critical point can’t be a minimum or a maximum.
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+These ideas can be generalized to arrive at a nice way to test if a critical point is a relative minimum, relative maximum or neither.  If  is a critical point and the function is decreasing to the left of  and is increasing to the right then  must be a relative minimum of the function.  Likewise, if the function is increasing to the left of  and decreasing to the right then  must be a relative maximum of the function.  
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph} Finally, if the function is increasing on both sides of  or decreasing on both sides of  then  can be neither a relative minimum nor a relative maximum.
+
+These ideas can be summarized up in the following test.
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+First Derivative Test
+Suppose that  is a critical point of  then,
+
+1.      If   to the left of  and  to the right of  then  is a relative maximum.
+2.      If   to the left of  and  to the right of  then  is a relative minimum.
+3.      If   is the same sign on both sides of  then  is neither a relative maximum nor a relative minimum.
+
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+It is important to note here that the first derivative test will only classify critical points as relative extrema and not as absolute extrema.  As we recall from the Finding Absolute Extrema section absolute extrema are largest and smallest function values and may not even exist or be critical points if they do exist. 
+\end{frame}
+%================================================================================ %
+\begin{frame} 
+	\frametitle{The Shape of a Graph}
+The first derivative test is exactly that, a test using the first derivative.  It doesn’t ever use the value of the function and so no conclusions can be drawn from the test about the relative “size” of the function at the critical points (which would be needed to identify absolute extrema) and can’t even begin to address the fact that absolute extrema may not occur at critical points.
+\end{frame}
+\end{document}

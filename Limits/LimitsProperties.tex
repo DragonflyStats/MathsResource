@@ -1,0 +1,237 @@
+\documentclass{beamer}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+	Limit Properties
+The time has almost come for us to actually compute some limits.  However, before we do that we will need some properties of limits that will make our life somewhat easier.  So, let’s take a look at those first.  The proof of some of these properties can be found in the Proof of Various Limit Properties section of the Extras chapter.
+ 
+Properties
+First we will assume that  and  exist and that c is any constant.  Then,
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+In other words we can “factor” a multiplicative constant out of a limit.
+ 
+
+So to take the limit of a sum or difference all we need to do is take the limit of the individual parts and then put them back together with the appropriate sign.  This is also not limited to two functions.  This fact will work no matter how many functions we’ve got separated by “+” or “-”.
+ 
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+We take the limits of products in the same way that we can take the limit of sums or differences.  Just take the limit of the pieces and then put them back together.  Also, as with sums or differences, this fact is not limited to just two functions.
+ 
+
+As noted in the statement we only need to worry about the limit in the denominator being zero when we do the limit of a quotient.  If it were zero we would end up with a division by zero error and we need to avoid that.
+ 
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+In this property n can be any real number (positive, negative, integer, fraction, irrational, zero, etc.).  In the case that n is an integer this rule can be thought of as an extended case of 3.
+ 
+For example consider the case of n = 2.
+                   
+           
+            The same can be done for any integer n.
+ 
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+This is just a special case of the previous example.
+                                            
+ 
+
+In other words, the limit of a constant is just the constant.  You should be able to convince yourself of this by drawing the graph of .
+ 
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+As with the last one you should be able to convince yourself of this by drawing the graph of .
+ 
+
+This is really just a special case of property 5 using .
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+Note that all these properties also hold for the two one-sided limits as well we just didn’t write them down with one sided limits to save on space.
+ 
+Let’s compute a limit or two using these properties.  The next couple of examples will lead us to some truly useful facts about limits that we will use on a continual basis.
+ 
+Example 1  Compute the value of the following limit.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+Solution
+This first time through we will use only the properties above to compute the limit.
+ 
+First we will use property 2 to break up the limit into three separate limits.  We will then use property 1 to bring the constants out of the first two limits.  Doing this gives us,
+
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+We can now use properties 7 through 9 to actually compute the limit.
+
+ 
+Now, let’s notice that if we had defined
+
+then the proceeding example would have been,
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+ 
+In other words, in this case we see that the limit is the same value that we’d get by just evaluating the function at the point in question.  This seems to violate one of the main concepts about limits that we’ve seen to this point.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+In the previous two sections we made a big deal about the fact that limits do not care about what is happening at the point in question.  They only care about what is happening around the point.  So how does the previous example fit into this since it appears to violate this main idea about limits?
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+Despite appearances the limit still doesn’t care about what the function is doing at .  In this case the function that we’ve got is simply “nice enough” so that what is happening around the point is exactly the same as what is happening at the point.  Eventually we will formalize up just what is meant by “nice enough”.  At this point let’s not worry too much about what “nice enough” is.  Let’s just take advantage of the fact that some functions will be “nice enough”, whatever that means.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large 
+The function in the last example was a polynomial.  It turns out that all polynomials are “nice enough” so that what is happening around the point is exactly the same as what is happening at the point.  This leads to the following fact.
+ 
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large 
+Fact
+If p(x) is a polynomial then,
+                                                                 
+ 
+By the end of this section we will generalize this out considerably to most of the functions that we’ll be seeing throughout this course.
+ 
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+Let’s take a look at another example.
+ 
+Example 2  Evaluate the following limit.
+
+Solution
+First notice that we can use property 4) to write the limit as,
+
+ 
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+Well, actually we should be a little careful.  We can do that provided the limit of the denominator isn’t zero.  As we will see however, it isn’t in this case so we’re okay.
+ 
+Now, both the numerator and denominator are polynomials so we can use the fact above to compute the limits of the numerator and the denominator and hence the limit itself.
+
+ 
+Notice that the limit of the denominator wasn’t zero and so our use of property 4 was legitimate.
+ 
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+	
+Notice in this last example that again all we really did was evaluate the function at the point in question.  So it appears that there is a fairly large class of functions for which this can be done.  Let’s generalize the fact from above a little.
+ 
+Fact
+Provided f(x) is “nice enough” we have,
+ 
+    
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large 
+ 
+Again, we will formalize up just what we mean by “nice enough” eventually.  At this point all we want to do is worry about which functions are “nice enough”.  Some functions are “nice enough” for all x while others will only be “nice enough” for certain values of x.  It will all depend on the function.
+ 
+As noted in the statement, this fact also holds for the two one-sided limits as well as the normal limit.
+ 
+Here is a list of some of the more common functions that are “nice enough”.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+Polynomials are nice enough for all x’s.
+If  then f(x) will be nice enough provided both p(x) and q(x) are nice enough and if we don’t get division by zero at the point we’re evaluating at.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+ are nice enough for all x’s
+ are nice enough provided   In other words secant and tangent are nice enough everywhere cosine isn’t zero.  To see why recall that these are both really rational functions and that cosine is in the denominator of both then go back up and look at the second bullet above.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+ are nice enough  provided   In other words cosecant and cotangent are nice enough everywhere sine isn’t zero.
+ is nice enough for all x if n is odd.
+ is nice enough for   if n is even.  Here we require  to avoid having to deal with complex values.
+ are nice enough for all x’s.
+ are nice enough for x>0.  Remember we can only plug positive numbers into logarithms and not zero or negative numbers.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+\frametitle{Limit Properties}
+\Large
+Any sum, difference or product of the above functions will also be nice enough.  Quotients will be nice enough provided we don’t get division by zero upon evaluating the limit.
+ 
+The last bullet is important.  This means that for any combination of these functions all we need to do is evaluate the function at the point in question, making sure that none of the restrictions are violated.  This means that we can now do a large number of limits.
+ 
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+	
+Example 3  Evaluate the following limit.
+
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Limit Properties}
+	\Large
+	
+Solution
+This is a combination of several of the functions listed above and none of the restrictions are violated so all we need to do is plug in  into the function to get the limit.
+
+ 
+Not a very pretty answer, but we can now do the limit.
+\end{frame}
+%===========================================================================%
+\end{document}

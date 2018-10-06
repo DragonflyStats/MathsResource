@@ -1,0 +1,92 @@
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+
+% % Curve Sketching and Properties of Curves
+
+%========================================================================%
+\begin{frame}
+	\frametitle{Points of Inflection}
+	
+	%% (This is a continuation of Local Maximums and Minimums. It is recommended that you review the first and second derivative tests before going on.)
+	
+	
+	\begin{itemize}
+		\item Inflection points are where the function changes \textbf{\textit{concavity}}.
+		\item  Since concave up corresponds to a positive second derivative and concave down corresponds to a negative second derivative, then when the function changes from concave up to concave down (or vise versa) the second derivative must equal zero at that point. 
+		\item So the second derivative must equal zero to be an inflection point. But don't get excited yet. You have to make sure that the concavity actually changes at that point.
+	\end{itemize}
+
+\end{frame}
+%========================================================================%
+\begin{frame}
+	\frametitle{Points of Inflection}
+	\textbf{Example 1 with $f(x) = x^3.$}
+	\begin{itemize}
+	\item Let's do an example to see what really happens. 
+	\item Given $f(x) = x^3$, find the inflection point(s). \item (Might as well find any local maximum and local minimums as well.)
+	\end{itemize}
+	
+	Start with getting the first derivative:
+	
+	\[f^{\prime}(x) = 3x^2.\]
+	
+\end{frame}
+%========================================================================%
+\begin{frame}
+	\frametitle{Points of Inflection}
+	
+	Then the second derivative is:
+	
+	\[f^{\prime \prime}(x) = 6x.\]
+	
+	Now set the second derivative equal to zero and solve for "x" to find possible inflection points.
+	
+	\[ 6x = 0\]
+	Necessarily $x=0$.
+\end{frame}
+%========================================================================%
+\begin{frame}
+	\frametitle{Points of Inflection}
+	\begin{itemize}
+		\item We can see that if there is an inflection point it has to be at x = 0. 
+		\item But how do we know for sure if x = 0 is an inflection point? 
+		\item We have to make sure that the concavity actually changes. 
+	\end{itemize}
+\end{frame}
+%========================================================================%
+\begin{frame}
+	\frametitle{Points of Inflection}
+	\begin{itemize}
+		\item To do this pick a number on either side of x = 0 and check what the concavity is at those locations. 
+		\item Let's use $x = -1$ and $x = 1$ to check. 
+		\item At x = -1, the second derivative gives:
+		
+		\[f^{\prime \prime}(-1) = -6 \]
+		
+		and the function is concave down at x = -1. 
+	\end{itemize}
+\end{frame}
+%========================================================================%
+\begin{frame}
+	\frametitle{Points of Inflection}
+	If we check x = 1 we get:
+	
+	
+	\[f^{\prime \prime}(1) = 6 \]
+	which means the function is concave up at x = 1.
+	
+\end{frame}
+%========================================================================%
+\begin{frame}
+	\frametitle{Points of Inflection}
+	\begin{itemize}
+		\item Thus we can see that the function has different concavities on either side of x =0 and the inflection point is at x=0. 
+		\item 
+		Note the inflection point is not necessarily where the function crosses the x-axis but is where the concavity actually changes.
+	\end{itemize}
+\end{frame}
+%========================================================================%
+\end{document}

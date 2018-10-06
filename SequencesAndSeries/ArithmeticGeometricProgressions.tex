@@ -1,0 +1,83 @@
+% - http://www.robots.ox.ac.uk/~dwm/Courses/1DF/1DF-N3.pdf
+%========================================================================================%
+
+3.1 Arithmetic progression
+An arithmetic series or progression is a sequence of n numbers successive members of
+which differ by the same amount d. That is, fa1; (a1+d); (a1+2d); \ldots ; (a1+(n􀀀1)d)g.
+The i-th term is ai = a1 + (i - 1)d.
+Suppose we wanted the sum to the n-th term, Sn =
+Pn
+i=1 ai . Write the sequence in
+the forward and reverse directions, then add:
+Sn= a1 + (a1 + d) + (a1 + 2d) +\ldots+(a1 + (n -  1)d)
+=(a1 + (n -  1)d)+(a1 + (n -  2)d)+(a1 + (n -  3)d)+\ldots+ a1
+(3.1)
+
+The sum of corresponding terms is always 2a1 + (n -  1)d and there are n of them so
+the sum is
+Sn =
+1
+2
+n(2a1 + (n -  1)d) =
+1
+2
+n(a1 + an) : (3.2)
+
+
+Convergence.
+ The sum of this series always diverges as more terms are added. The
+only series that remains finite is a string of zeros!
+1
+
+%========================================================================================%
+\subsection*{3.2 Geometric progression}
+A geometric series or progression is a sequence of n numbers successive members of
+which are multiplied by a common factor r . That is, fa1; ra1; r 2a1; \ldots ; r n􀀀1a1)g. The
+i-th term is ai = r i􀀀1a1. The sum to n terms is
+\[Sn = a1 + ra1 + r 2a1 + \ldots + r n􀀀1a1)\]
+\[rSn = ra1 + r 2a1 + \ldots + r n􀀀1a1 + r na1)\]
+(3.3)
+So
+\[ Sn(1  -r ) = a1(1  -r n) )Sn =
+a1(1  -r n)
+1  -r
+: (3.4)\]
+
+Convergence. 
+
+The sum of an infinite number of terms will diverge to 1 unless
+jr j < 1. If this condition is satisfied, r n ! 0 and
+S1 =
+a1
+1  -r
+: (3.5)
+
+%========================================================================================%
+\subsection*{3.3 Convergence vs Divergence}
+The set S1; S2; :::Sn::: is known as the set of partial sums. The definition of convergence
+is
+Definition of convergence
+lim
+n!1
+Sn ! 
+
+
+Finite value (3.6)
+If a series does not converge, it diverges. Series can diverge in different ways. Some
+have partials sums that tend either to +1 or 􀀀1, in others successive partial sums
+oscillate between 1.
+
+%========================================================================================%
+
+3.4 Absolute vs Conditional Convergence
+Suppose a series infinite sum
+S1 = a1 + a2 + a3 + \ldots (3.7)
+is convergent. But suppose that the series contains positive and negative terms. Clearly
+the positive and negative terms will cancel somewhat, helping to constrain the growth
+of the sum. We could ask a tougher question: does the following converge?
+S0
+1 = ja1j + ja2j + ja3j + \ldots (3.8)
+If it does, the original series is absolutely convergent. Furthermore, if we do not know
+whether S converges, but can prove S0 converges then this is sufficient to prove that
+S does converge.
+%========================================================================================%

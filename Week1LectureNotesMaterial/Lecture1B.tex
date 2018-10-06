@@ -1,0 +1,275 @@
+
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\begin{document}
+
+
+\begin{frame}
+	\frametitle{Example 2: Evaluating a Function}
+	Evaluate the following function for x =1,2 and 5 respectively.
+	{
+		\Large
+	\[ f(x) = \frac{e^x + {e^{-x}}}{2} \]
+}
+	Remark:  Example 1 was done in previous class.
+\end{frame}
+%================================================================================== %
+\begin{frame}
+	
+	\frametitle{Example 3: Evaluating a Function}
+	Evaluate the function for each of the following values : 0.5,1,1.25,2.
+	{
+		\Large
+	\[f(x) =  \sqrt{1+e^{x}}  \]
+}
+	Four decimal places will suffice.
+\end{frame}
+\begin{frame}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|}
+			\hline \rule[-2ex]{0pt}{5.5ex} x & $e^x$ & $1+e^x$ & $\sqrt{1+e^x}$ \\ \hline
+			\hline \rule[-2ex]{0pt}{5.5ex} 0.5 & \phantom{space}  &  &  \\ 
+			\hline \rule[-2ex]{0pt}{5.5ex} 1 &  &  &  \\ 
+			\hline \rule[-2ex]{0pt}{5.5ex} 1.25 & \phantom{space}  &  &  \\ 
+			\hline \rule[-2ex]{0pt}{5.5ex} 2 & \phantom{space}  &  & \phantom{space}  \\ 
+			\hline 
+		\end{tabular} 
+	\end{center}
+\end{frame}
+%================================================================================ %
+\begin{frame}
+	\frametitle{Recall : Sets of Numbers}
+	\begin{itemize} 
+		\item $\mathbb{N}$ Set of all natural numbers
+		\item $\mathbb{Z}$ Set of all integers
+		\item $\mathbb{Q}$ Set of all rational numbers
+		\item $\mathbb{R}$ Set of all real numbers
+	\end{itemize}
+	
+	\bigskip There are, of course, other numbers sets, but we will not be encountering them on the course.
+\end{frame}
+%========================================================== %
+
+\begin{frame}
+	\frametitle{Recall : Sets of Numbers}
+	\begin{itemize}
+		\item $\mathbb{Z}^{+}$ Set of all positive integers
+		\item $\mathbb{Z}^{-}$ Set of all negative integers
+		\item $\mathbb{R}^{+}$ Set of all positive real numbers
+		\item $\mathbb{R}^{-}$ Set of all negative real numbers
+	\end{itemize}
+\end{frame}
+
+%=========================================================================================== %
+\subsection*{Topic 1 : Special Functions}
+\begin{frame}
+	\frametitle{Special Functions}
+	\begin{itemize}
+		% \item The factorial Operator
+		\item Absolute Value Function
+		\item The Sign Function
+		\item Floor and Ceiling Functions
+		\item Hyperbolic Functions
+	\end{itemize}	
+\end{frame}
+
+
+%---------------------------------------%
+\begin{frame}
+	\frametitle{Absolute Value Function}
+	\Large
+	\textbf{Absolute Value Function}
+	\begin{itemize}
+		\item The absolute value (or modulus) $|x|$ of a real number x is the non-negative value of x without regard to its sign. 
+		
+		%	\item For example, $|x| = x$ for a positive x, $|x| = -x$ for a negative x (in which case −x is positive), and $|0| = 0$. 
+		%	\item For example, the absolute value of 4 is 4, and the absolute value of $-4$ is also 4. 
+		%\item The absolute value of a number may be thought of as its distance from zero.
+	\end{itemize}
+	\[|x| = \begin{cases} x, & \mbox{if }  x \ge 0  \\ -x,  & \mbox{if } x < 0. \end{cases} \]
+\end{frame}
+%---------------------------------------%
+\begin{frame}
+	\frametitle{Topic 1 : Absolute Value Function}
+	\Large
+	\vspace{-1cm}
+	\begin{itemize}
+		
+		\item For a positive x, $|x| = x$ 
+		\item For a negative x (in which case −x is positive) $|x| = -x$ 
+		\item The absolute value of 0 is 0:  $|0| = 0$. 
+		\item For example, the absolute value of 4 is 4, and the absolute value of $-4$ is also 4. 
+		\item IMPORTANT:  The input to this function is any real number. The output of this function will always be a positive real numbers.
+		%\item The absolute value of a number may be thought of as its distance from zero.
+	\end{itemize}
+	
+	
+\end{frame}
+\begin{frame}
+	\frametitle{Topic 1 : Sign Function}
+	\Large
+	\textbf{Sign Function}
+	\begin{itemize}
+		\item The sign function $sng(x)$ of a real number x is a signed value of absolute value of 1, dependent on the sign of $x$. 
+		
+		%	\item For example, $|x| = x$ for a positive x, $|x| = -x$ for a negative x (in which case −x is positive), and $|0| = 0$. 
+		%	\item For example, the absolute value of 4 is 4, and the absolute value of $-4$ is also 4. 
+		%\item The absolute value of a number may be thought of as its distance from zero.
+	\item IMPORTANT:  The input to this function is any real number. The output of this function will always be either 1 or -1.
+	\end{itemize}
+	\[ sgn(x) = \begin{cases} 1, & \mbox{if }  x \ge 0  \\ -1,  & \mbox{if } x < 0. \end{cases} \]
+\end{frame}
+%---------------------------------------%
+\begin{frame}
+	\frametitle{Topic 1 : Floor and Ceiling Functions}
+	\Large
+	\begin{itemize}
+		\item The floor and ceiling functions map a real number to the largest previous or the smallest following integer, respectively. \item More precisely, \[floor(x) = \lfloor x\rfloor \] is the largest integer not greater than x and \[ceiling(x) =  \lceil x \rceil \] is the smallest integer not less than x.
+	\end{itemize}
+	
+	
+\end{frame}
+
+%---------------------------------------%
+\begin{frame}
+	\frametitle{Topic 1 : Floor and Ceiling Functions}
+	\textbf{Examples}
+	{
+		\LARGE
+		\begin{eqnarray}
+		\lfloor 3.14 \rfloor =& 3 \\ \bigskip
+		\lceil -4.5 \rceil =& -5 \\ \bigskip
+		| -4 | =&  4
+		\end{eqnarray}
+}
+{\Large	
+	\textbf{Remark:}  Input to the floor and ceiling function can be any really number, but outputs are always integers.
+	}
+\end{frame}
+
+%====================================================================%
+\begin{frame}
+\frametitle{Even and Odd functions}
+\Large
+\textbf{Even Functions}\\
+Then f is even if the following equation holds for all x and -x in the domain of f:
+
+\[f(x) = f(-x), \,\]
+
+Geometrically speaking, the graph face of an even function is symmetric with respect to the y-axis, meaning that its graph remains unchanged after reflection about the y-axis.
+%Examples of even functions are |x|, x2, x4, cos(x), and cosh(x).
+\end{frame}
+%================================================================= %
+\begin{frame}
+\frametitle{Even and Odd functions}
+\Large
+\textbf{Odd Functions}\\
+Let f(x) be a real-valued function of a real variable. Then f is odd if the following equation holds for all x and -x in the domain of f:
+
+\[-f(x) = f(-x), \,\]
+or
+
+\[f(x) + f(-x) = 0. \,\]
+\end{frame}
+
+\begin{frame}
+	\frametitle{Even and Odd functions}
+	\begin{itemize}
+    \item \textbf{Important:} A function may be neither even nor odd.
+	\item Discussion with examples on Blackboard
+	\item Examples of Questions from Past Papers done on board
+	\end{itemize}
+	
+\end{frame}
+	
+%====================================================%
+\begin{frame}
+	\frametitle{Tech Maths 2}
+	\textbf{Cross Multiplication}
+	\Large 
+	\begin{itemize}
+		\item Can simplify an expression by multiplying both the numerator and denominator by same term.
+		\item This does not change the value of the expression.
+		\item Remark
+		{
+			\LARGE
+			\[ \frac{A}{B} + \frac{X}{Y} = \frac{AY}{BY} + \frac{BX}{BY} = \frac{AY+BX}{BY}\]
+		}
+	\end{itemize}
+\end{frame}
+%======================================================================= %
+
+
+\begin{frame}
+	\frametitle{Cross Mutliplication}
+	\Large
+	\[  \frac{p}{x+a} + \frac{q}{x+b}   = \frac{p(x+b) + q(x+a)}{(x+a)(x+b)} = \frac{(p+q)x+ (pb+aq)}{(x+a)(x+b)} \]
+	
+	\begin{itemize}
+		\item $\{p,q,a,b\} \in R$
+	\end{itemize}
+	
+\end{frame}
+%======================================================================= 
+\begin{frame}
+	\frametitle{Cross Mutliplication}
+	\Large
+	\[  \frac{4}{x+2} + \frac{2}{x-1}   = \frac{4(x-1) + 2(x+2)}{(x+2)(x-1)} \]
+	\[ = \frac{(4+2)x + (4(-1)+(2\times 2)}{(x+2)(x-1)} \]
+	\[ = \frac{2x}{x^2+x-2}\]
+	
+\end{frame}
+%====================================================%
+\begin{frame}
+	\frametitle{Tech Maths 2}
+	\textbf{Cross-Multiplication: Example 1}
+	% \textbf{Lecture 1B}
+	\begin{itemize}
+		\item Solve the following Equation for A and B
+		\item $A,B \in \mathbb{R}$
+	\end{itemize}
+	
+	\[ \frac{2x + 5}{x^2 - 4x - 12} = \frac{A}{x-6} + \frac{B}{x+2}\]
+\end{frame}
+%====================================================%
+\begin{frame}
+	\frametitle{Tech Maths 2}
+	%\textbf{Lecture 1B}
+	\textbf{Cross-Multiplication: Example 2}
+	\begin{itemize}
+		\item Solve the following Equation for A and B
+		\item $A,B \in \mathbb{R}$
+	\end{itemize}
+	
+	\[ \frac{5}{x^2 - 4x - 12} = \frac{A}{x-6} + \frac{B}{x+2}\]
+\end{frame}
+
+
+%======================================================================= %
+
+
+
+
+
+
+
+\begin{frame}
+	\frametitle{ Topic 2 : Laws of Logarithms}
+	\Large
+	\begin{itemize}
+		\item Law 1 : Multiplcation of Logarithms
+		\[ Log(a) \times Log(b) = Log(a+b) \]
+		\item Law 2 : Division of Logarithms
+		\[ \frac{Log(a)}{Log(b)} = Log(a-b) \]
+		\item Law 3 : Powers of Logarithms
+		\[ Log(a^b) = b \times Log(a) \]
+	\end{itemize}
+	
+	
+	
+\end{frame}
+\end{document}
+
