@@ -1,3 +1,33 @@
+Binomial Expansion (Useful for Power Series Questions)        :    m_ZAu9kSnUU
+Computing Confidence Intervals (part 1)        :    uJax_lgu9JU
+Confidence Interval for Single Sample Proportion        :    AS2eaapq8AQ
+Continuous Random Variables - Exercise        :    PqKoxm4Igog
+Differential Equation (Worked Example)        :    eRPH29EJ42U
+Exponential Distribution - Tutorial Question (Part 1)        :    5T8Wf9P-REc
+Normal Distribution: Using Murdoch Barnes Table 3        :    BzuPrrlDROc
+Poisson Distribution Exercises        :    y2IYE48zS7E
+Power Series (Worked Exercise 2)        :    eXnuC3zvRUg
+Probability Question - Worked Example        :    9nDu_rMg1yA
+Probability Tutorial Questions Part A        :    9nDu_rMg1yA
+
+
+
+
+
+Accuracy, Recall and Precision      :      RYFViaaJxE8
+Characteristic Polynomial of a Matrix HD      :      
+Cross Product of Two 3 by 3 Vectors (Linear Algebra) HD      :      
+Eigenvalues : Solving the Characteristic Polynomials HD      :      MTUOqawOSr0
+Gaussian Elimination (Worked Example) HD      :      OdTht8_cblg
+Introduction to Probability - Tutorial Questions HD      :      nYMKtMiO19o
+Logarithms and Exponential Functions MA4702 Q6 PartA HD      :      _BB4t7t0GmE
+Planes Equation of Planes HD      :      JNGEpuztV-A
+Price Elasticity of Demand - Exercise (Maths for Economics) HD      :      
+Price Elasticity of Demand ( Maths For Economics ) HD      :      
+Ratio Test Calculations (MA4702 Tutorial Q24) HD      :      WoOc_K1RDvw
+Scalar Triple Product HD      :      icLDQUk2Rvo
+Statistics - The F Score      :      x2UKFXs1-iU
+
 \[ \int^{b}_{a} \frac{x^2+5x + 10}{2x+5} dx \]
 
 \[ \int x \sqrt{x+1} dx \] 
