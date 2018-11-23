@@ -1,0 +1,25 @@
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\section*{Trigonometric Substitution}
+%=============================================================================== %
+\begin{frame}
+	\frametitle{Trigonometric Subsititution}
+\[\int\frac{dx}{\sqrt{a^2-x^2}}\]
+
+\[x=a\sin(\theta),\quad dx=a\cos(\theta)\,d\theta, \quad \theta=\arcsin\left(\frac{x}{a}\right)\]
+\end{frame}
+%================================================================================ %
+\begin{frame}
+	\frametitle{Trigonometric Subsititution}
+{\large
+	\begin{eqnarray}
+	\int\frac{dx}{\sqrt{a^2-x^2}} & = \int\frac{a\cos(\theta)\,d\theta}{\sqrt{a^2-a^2\sin^2(\theta)}}\\ \nonumber &= \int\frac{a\cos(\theta)\,d\theta}{\sqrt{a^2(1-\sin^2(\theta))}} \\ \nonumber
+	& = \int\frac{a\cos(\theta)\,d\theta}{\sqrt{a^2\cos^2(\theta)}} \\ &= \int d\theta=\theta+C \\ \nonumber &=\arcsin\left(\frac{x}{a}\right)+C
+	\end{eqnarray}
+}
+\end{frame}
+\end{document}

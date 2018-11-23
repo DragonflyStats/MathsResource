@@ -1,0 +1,11 @@
+\[ \lim _{{x\to p}}f(x)=L  \]
+
+\end{frame}
+
+%-------------------------------------------%
+\begin{frame}
+\frametitle{Limits of functions}
+\Large
+%\section{Algebraic limit theorem}
+\[ {\begin{matrix}\lim \limits _{{x\to p}}&(f(x)+g(x))&=&\lim \limits _{{x\to p}}f(x)+\lim \limits _{{x\to p}}g(x)\\\lim \limits _{{x\to p}}&(f(x)-g(x))&=&\lim \limits _{{x\to p}}f(x)-\lim \limits _{{x\to p}}g(x)\\\lim \limits _{{x\to p}}&(f(x)\cdot g(x))&=&\lim \limits _{{x\to p}}f(x)\cdot \lim \limits _{{x\to p}}g(x)\\\lim \limits _{{x\to p}}&(f(x)/g(x))&=&{\lim \limits _{{x\to p}}f(x)/\lim \limits _{{x\to p}}g(x)}\end{matrix}}
+

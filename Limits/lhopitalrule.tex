@@ -1,0 +1,278 @@
+\documentclass{beamer}
+% %= http://tutorial.math.lamar.edu/Classes/CalcI/LHospitalsRule.aspx
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+	\begin{frame}
+\frametitle{Indeterminate Forms and L’Hospital’s Rule}
+Back in the chapter on Limits we saw methods for dealing with the following limits.
+
+
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+\frametitle{L’Hospital’s Rule}
+\large
+
+ 
+ 
+In the first limit if we plugged in  we would get 0/0 and in the second limit if we “plugged” in infinity we would get  (recall that as x goes to infinity a polynomial will behave in the same fashion that its largest power behaves).  Both of these are called indeterminate forms.  In both of these cases there are competing interests or rules and it’s not clear which will win out.
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large
+In the case of 0/0 we typically think of a fraction that has a numerator of zero as being zero.  However, we also tend to think of fractions in which the denominator is going to zero as infinity or might not exist at all.  Likewise, we tend to think of a fraction in which the numerator and denominator are the same as one.  So, which will win out?  Or will neither win out and they all “cancel out” and the limit will reach some other value?
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large 
+In the case of  we have a similar set of problems.  If the numerator of a fraction is going to infinity we tend to think of the whole fraction going to infinity.  Also if the denominator is going to infinity we tend to think of the fraction as going to zero.  We also have the case of a fraction in which the numerator and denominator are the same (ignoring the minus sign) and so we might get -1.  Again, it’s not clear which of these will win out, if any of them will win out.
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large 
+With the second limit there is the further problem that infinity isn’t really a number and so we really shouldn’t even treat it like a number.  Much of the time it simply won’t behave as we would expect it to if it was a number.  To look a little more into this check out the Types of Infinity section in the Extras chapter at the end of this document.
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large 
+This is the problem with indeterminate forms.  It’s just not clear what is happening in the limit.  There are other types of indeterminate forms as well.  Some other types are,
+ 
+ 
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large
+
+These all have competing interests or rules that tell us what should happen and it’s just not clear which, if any, of the interests or rules will win out.  The topic of this section is how to deal with these kinds of limits.
+ 
+As already pointed out we do know how to deal with some kinds of indeterminate forms already.  For the two limits above we work them as follows.
+
+ 
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large
+ 
+ 
+In the first case we simply factored, canceled and took the limit and in the second case we factored out an  from both the numerator and the denominator and took the limit.  Notice as well that none of the competing interests or rules in these cases won out!  That is often the case.
+ 
+So we can deal with some of these.  However what about the following two limits.
+
+ 
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large
+This first is a 0/0 indeterminate form, but we can’t factor this one.  The second is an  indeterminate form, but we can’t just factor an  out of the numerator.  So, nothing that we’ve got in our bag of tricks will work with these two limits.
+ 
+This is where the subject of this section comes into play. 
+ 
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large
+L’Hospital’s Rule
+Suppose that we have one of the following cases,
+                             
+where a can be any real number, infinity or negative infinity.  In these cases we have,
+                                                       
+ 
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large
+So, L’Hospital’s Rule tells us that if we have an indeterminate form 0/0 or  all we need to do is differentiate the numerator and differentiate the denominator and then take the limit.
+ 
+Before proceeding with examples let me address the spelling of “L’Hospital”.  The more modern spelling is “L’Hôpital”.  However, when I first learned Calculus my teacher used the spelling that I use in these notes and the first text book that I taught Calculus out of also used the spelling that I use here.
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large
+Also, as noted on the Wikipedia page for L’Hospital's Rule,
+ 
+“In the 17th and 18th centuries, the name was commonly spelled "l'Hospital", and he himeself spelled his name that way. However, French spellings have been altered: the silent 's' has been removed and replaced with the circumflex over the preceding vowel. The former spelling is still used in English where there is no circumflex.”
+ 
+So, the spelling that I’ve used here is an acceptable spelling of his name, albeit not the modern spelling, and because I’m used to spelling it as “L’Hospital” that is the spelling that I’m going to use in these notes.
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large
+Let’s work some examples.
+ 
+Example 1  Evaluate each of the following limits.
+(a)    [Solution]
+(b)    [Solution]
+(c)    [Solution]
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large
+	 
+Solution
+(a) 
+So, we have already established that this is a 0/0 indeterminate form so let’s just apply L’Hospital’s Rule.
+                                                   
+[Return to Problems]
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large
+(b) 
+In this case we also have a 0/0 indeterminate form and if we were really good at factoring we could factor the numerator and denominator, simplify and take the limit.  However, that’s going to be more work than just using L’Hospital’s Rule.
+ 
+                                   
+[Return to Problems]
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large
+(c) 
+This was the other limit that we started off looking at and we know that it’s the indeterminate form  so let’s apply L’Hospital’s Rule.
+                                                            
+Now we have a small problem.  This new limit is also a  indeterminate form. However, it’s not really a problem.  We know how to deal with these kinds of limits.  Just apply L’Hospital’s Rule. 
+                                                 
+ \end{frame}
+ %=============================================================================================================================== %
+ \begin{frame}
+ 	\frametitle{L’Hospital’s Rule}
+ 	\large
+Sometimes we will need to apply L’Hospital’s Rule more than once.
+[Return to Problems]
+ 
+L’Hospital’s Rule works great on the two indeterminate forms 0/0 and .  However, there are many more indeterminate forms out there as we saw earlier.  Let’s take a look at some of those and see how we deal with those kinds of indeterminate forms.
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large
+We’ll start with the indeterminate form .
+ 
+Example 2  Evaluate the following limit.
+         \end{frame}
+         %=============================================================================================================================== %
+         \begin{frame}
+         	\frametitle{L’Hospital’s Rule}
+         	\large                                                       
+Solution
+Note that we really do need to do the right-hand limit here.  We know that the natural logarithm is only defined for positive x and so this is the only limit that makes any sense.
+ 
+Now, in the limit, we get the indeterminate form .  L’Hospital’s Rule won’t work on products, it only works on quotients.  However, we can turn this into a fraction if we rewrite things a little.
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large                                      
+The function is the same, just rewritten, and the limit is now in the form  and we can now use L’Hospital’s Rule.
+                                              
+ 
+Now, this is a mess, but it cleans up nicely.
+
+ 
+In the previous example we used the fact that we can always write a product of functions as a quotient by doing one of the following.
+
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large
+ 
+Using these two facts will allow us to turn any limit in the form  into a limit in the form 0/0 or .  Which one of these two we get after doing the rewrite will depend upon which fact we used to do the rewrite.  One of the rewrites will give 0/0 and the other will give .  It all depends on which function stays in the numerator and which gets moved down to the denominator. 
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large
+Let’s take a look at another example.
+ 
+Example 3  Evaluate the following limit.
+          
+        \end{frame}
+        %=============================================================================================================================== %
+        \begin{frame}
+        	\frametitle{L’Hospital’s Rule}
+        	\large                                                        
+Solution
+So, it’s in the form .  This means that we’ll need to write it as a quotient.  Moving the x to the denominator worked in the previous example so let’s try that with this problem as well.
+                                                          
+Writing the product in this way gives us a product that has the form 0/0 in the limit.  So, let’s use L’Hospital’s Rule on the quotient.
+                       
+ \end{frame}
+ %=============================================================================================================================== %
+ \begin{frame}
+ 	\frametitle{L’Hospital’s Rule}
+ 	\large
+ 
+Hummmm….  This doesn’t seem to be getting us anywhere.  With each application of L’Hospital’s Rule we just end up with another 0/0 indeterminate form and in fact the derivatives seem to be getting worse and worse.  Also note that if we simplified the quotient back into a product we would just end up with either  or  and so that won’t do us any good.
+ 
+This does not mean however that the limit can’t be done.  It just means that we moved the wrong function to the denominator.  Let’s move the exponential function instead\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large                                      
+Note that we used the fact that,
+                                                                  
+to simplify the quotient up a little.  This will help us when it comes time to take some derivatives.  The quotient is now an indeterminate form of  and use L’Hospital’s Rule gives,
+                                             
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large 
+So, when faced with a product  we can turn it into a quotient that will allow us to use L’Hospital’s Rule.  However, as we saw in the last example we need to be careful with how we do that on occasion.  Sometimes we can use either quotient and in other cases only one will work.
+ 
+Let’s now take a look at the indeterminate forms,
+
+ 
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large 
+These can all be dealt with in the following way so we’ll just work one example.
+ 
+Example 4  Evaluate the following limit.
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large                                                       
+Solution
+In the limit this is the indeterminate form .  We’re actually going to spend most of this problem on a different limit.  Let’s first define the following.
+                                                                   
+Now, if we take the natural log of both sides we get,
+                                                
+\end{frame}
+%=============================================================================================================================== %
+\begin{frame}
+	\frametitle{L’Hospital’s Rule}
+	\large 
+Let’s now take a look at the following limit.
+                                              
+ 
+This limit was just a L’Hospital’s Rule problem and we know how to do those.  So, what did this have to do with our limit?  Well first notice that,
+                                                                 
+ and so our limit could be written as,
+                                                     
+ 
+We can now use the limit above to finish this problem.
+\end{frame}
+\end{document}
+
+
+                                       

@@ -1,0 +1,352 @@
+\documentclass{beamer}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+	
+	
+	%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+
+Computing Limits
+In the previous section we saw that there is a large class of function that allows us to use
+
+
+
+to compute limits.  
+
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+	However, there are also many limits for which this won’t work easily.  The purpose of this section is to develop techniques for dealing with some of these limits that will not allow us to just use this fact.
+
+Let’s first got back and take a look at one of the first limits that we looked at and compute its exact value and verify our guess for the limit.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+\frametitle{Computing Limits}
+\Large
+Example 1  Evaluate the following limit.
+
+Solution
+First let’s notice that if we try to plug in  we get,
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+
+So, we can’t just plug in  to evaluate the limit.  So, we’re going to have to do something else. 
+
+The first thing that we should always do when evaluating limits is to simplify the function as much as possible.  In this case that means factoring both the numerator and denominator.  Doing this gives,
+
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+	
+So, upon factoring we saw that we could cancel an  from both the numerator and the denominator.  Upon doing this we now have a new rational expression that we can plug  into because we lost the division by zero problem.  Therefore, the limit is,
+
+
+Note that this is in fact what we guessed the limit to be.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+\begin{itemize}
+\item On a side note, the 0/0 we initially got in the previous example is called an \textbf{\textit{indeterminate form}}.  
+\item This means that we don’t really know what it will be until we do some more work.  
+\item Typically zero in the denominator means it’s undefined.
+\end{itemize}	
+  
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+\begin{itemize}
+	\item  However that will only be true if the numerator isn’t also zero.  
+	\item Also, zero in the numerator usually means that the fraction is zero, unless the denominator is also zero.  
+	\item Likewise anything divided by itself is 1, unless we’re talking about zero.
+\end{itemize}
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+	
+So, there are really three competing “rules” here and it’s not clear which one will win out.  It’s also possible that none of them will win out and we will get something totally different from undefined, zero, or one.  We might, for instance, get a value of 4 out of this, to pick a number completely at random.
+
+There are many more kinds of indeterminate forms and we will be discussing indeterminate forms at length in the next chapter.
+
+Let’s take a look at a couple of more examples.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+	
+Example 2  Evaluate the following limit.
+
+Solution
+In this case we also get 0/0 and factoring is not really an option.  However, there is still some simplification that we can do.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+
+So, upon multiplying out the first term we get a little cancellation and now notice that we can factor an h out of both terms in the numerator which will cancel against the h in the denominator and the division by zero problem goes away and we can then evaluate the limit.
+
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+Example 3  Evaluate the following limit.
+
+Solution
+This limit is going to be a little more work than the previous two.  Once again however note that we get the indeterminate form 0/0 if we try to just evaluate the limit.  Also note that neither of the two examples will be of any help here, at least initially.  We can’t factor and we can’t just multiply something out to get the function to simplify.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+When there is a square root in the numerator or denominator we can try to rationalize and see if that helps.  Recall that rationalizing makes use of the fact that
+
+So, if either the first and/or the second term have a square root in them the rationalizing will eliminate the root(s).  This might help in evaluating the limit.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+
+Let’s try rationalizing the numerator in this case. 
+
+Remember that to rationalize we just take the numerator (since that’s what we’re rationalizing), change the sign on the second term and multiply the numerator and denominator by this new term.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+Next, we multiply the numerator out being careful to watch minus signs.
+
+
+Notice that we didn’t multiply the denominator out as well.  Most students come out of an Algebra class having it beaten into their heads to always multiply this stuff out.  However, in this case multiplying out will make the problem very difficult and in the end you’ll just end up factoring it back out anyway.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+At this stage we are almost done.  Notice that we can factor the numerator so let’s do that.
+
+
+Now all we need to do is notice that if we factor a “-1”out of the first term in the denominator we can do some canceling.  At that point the division by zero problem will go away and we can evaluate the limit.
+
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+\begin{itemize}
+\item Note that if we had multiplied the denominator out we would not have been able to do this canceling and in all likelihood would not have even seen that some canceling could have been done.
+
+\item So, we’ve taken a look at a couple of limits in which evaluation gave the indeterminate form 0/0 and we now have a couple of things to try in these cases.
+\end{itemize}
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+Let’s take a look at another kind of problem that can arise in computing some limits involving piecewise functions.
+
+Example 4  
+Given the function,
+
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+Compute the following limits.
+(a)    [Solution]
+(b)    [Solution]
+
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+Solution
+(a)  
+In this case there really isn’t a whole lot to do.  In doing limits recall that we must always look at what’s happening on both sides of the point in question as we move in towards it.  In this case  is completely inside the second interval for the function and so there are values of y on both sides of  that are also inside this interval.  This means that we can just use the fact to evaluate this limit.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+[Return to Problems]
+
+(b)  
+This part is the real point to this problem.  In this case the point that we want to take the limit for is the cutoff point for the two intervals.  In other words we can’t just plug  into the second portion because this interval does not contain values of y to the left of  and we need to know what is happening on both sides of the point.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+To do this part we are going to have to remember the fact from the section on one-sided limits that says that if the two one-sided limits exist and are the same then the normal limit will also exist and have the same value.
+
+Notice that both of the one sided limits can be done here since we are only going to be looking at one side of the point in question.  So let’s do the two one-sided limits and see what we get.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+
+
+
+So, in this case we can see that,
+
+and so since the two one sided limits aren’t the same
+
+doesn’t exist.
+[Return to Problems]
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+Note that a very simple change to the function will make the limit at  exist so don’t get in into your head that limits at these cutoff points in piecewise function don’t ever exist.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+Example 5  Evaluate the following limit.
+
+Solution
+The two one-sided limits this time are,
+
+
+
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+The one-sided limits are the same so we get,
+
+
+There is one more limit that we need to do.  However, we will need a new fact about limits that will help us to do this.
+
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+Fact
+If  for all x on [a, b] (except possibly at  ) and  then,
+
+
+Note that this fact should make some sense to you if we assume that both functions are nice enough.  If both of the functions are “nice enough” to use the limit evaluation fact then we have,
+
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+
+The inequality is true because we know that c is somewhere between a and b and in that range we also know . 
+
+Note that we don’t really need the two functions to be nice enough for the fact to be true, but it does provide a nice way to give a quick “justification” for the fact.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+Also, note that we said that we assumed that  for all x on [a, b] (except possibly at  ).  Because limits do not care what is actually happening at  we don’t really need the inequality to hold at that specific point.  We only need it to hold around  since that is what the limit is concerned about.
+
+We can take this fact one step farther to get the following theorem.
+\end{frame}
+%===========================================================================%
+\subsection*{The Squeeze Theorem}
+
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+\textbf{Squeeze Theorem}\\
+Suppose that for all x on $[a, b]$ (except possibly at  ) we have,
+
+Also suppose that,
+
+for some .  Then,
+
+
+As with the previous fact we only need to know that  is true around  because we are working with limits and they are only concerned with what is going on around  and not what is actually happening at .
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+Now, if we again assume that all three functions are nice enough (again this isn’t required to make the Squeeze Theorem true, it only helps with the visualization) then we can get a quick sketch of what the Squeeze Theorem is telling us.  The following figure illustrates what is happening in this theorem.
+% % = ComputingLimits_G1
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+From the figure we can see that if the limits of $f(x)$ and $g(x)$ are equal at  then the function values must also be equal at  (this is where we’re using the fact that we assumed the functions where “nice enough”, which isn’t really required for the Theorem).  However, because h(x) is “squeezed” between f(x) and g(x) at this point then h(x) must have the same value.  Therefore, the limit of h(x) at this point must also be the same.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+The Squeeze theorem is also known as the Sandwich Theorem and the Pinching Theorem.
+
+So, how do we use this theorem to help us with limits?  Let’s take a look at the following example to see the theorem in action.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+\textbf{Example 6}\\  Evaluate the following limit.
+
+Solution
+In this example none of the previous examples can help us.  There’s no factoring or simplifying to do.  We can’t rationalize and one-sided limits won’t work.  There’s even a question as to whether this limit will exist since we have division by zero inside the cosine at x=0.
+
+The first thing to notice is that we know the following fact about cosine.
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+Our function doesn’t have just an x in the cosine, but as long as we avoid  we can say the same thing for our cosine.
+
+It’s okay for us to ignore  here because we are taking a limit and we know that limits don’t care about what’s actually going on at the point in question,  in this case.
+Now if we have the above inequality for our cosine we can just multiply everything by an x2 and get the following.
+
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+In other words we’ve managed to squeeze the function that we were interested in between two other functions that are very easy to deal with.  So, the limits of the two outer functions are.
+
+
+These are the same and so by the Squeeze theorem we must also have,
+\end{frame}
+%===========================================================================%
+\begin{frame}[fragile]
+	\frametitle{Computing Limits}
+	\Large
+
+We can verify this with the graph of the three functions.  This is shown below.
+
+\end{frame}
+\end{document}
