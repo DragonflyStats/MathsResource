@@ -1,0 +1,86 @@
+\documentclass[french]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\begin{document}
+\subsection*{Operations Research 2 - 2015 Question 6}
+Maximize p = 7x + 6y \\
+	
+	subject to
+	
+	\begin{tabular}{cl}
+		
+		\phantom{space}
+		& 8x + 12y $\leq$ 125\\
+		& 9x - 4y $\leq$= 45\\
+		& y $\leq$ 9\\
+		& x $\leq$ 7\\
+		& x,y $\geq$ 0\\
+		& x,y integers\\
+		
+	\end{tabular} 
+	
+\begin{itemize}
+	\item An IP is to be solved using the tabular Branch and Bound method.
+	
+	
+\item 	Use the solution grids below to solve the problem. Each node is referenced by its tree level, ordered from left to right so that the annotation {\textbf Node XY} is the node at level {\textbf X} at position {\textbf Y} where ${\textbf Y}=1$ is the left-most position in level {\textbf X}.
+\end{itemize}	
+
+
+	\begin{tabular}{||c|c||c|c||c|c||}
+		\hline  & Node 0 &   & Node 1A &  & Node 1B     \\  \hline
+		\hline (i) & $X= 6.50$, $Y= 7.50$ & (i) & $X= 6.00$, $Y= 5.00$ &  (i)  & $X= 5.75$, $Y = 7.00$\\  \hline
+		\hline (ii)  & $X= 7.50$, $Y= 6.00$  &  (ii) & $X= 6.00$, $Y= 6.00$ & (ii) & $X= 6.625$, $Y = 6.00 $ \\  \hline
+		\hline (iii) & $X= 7.20$, $Y = 5.40$  & (iii) & $X= 4.50$, $Y = 5.50$ & (iii) & $X= 5.625$, $Y = 6.875$ \\  \hline
+		\hline (iv)  & $X= 6.00$, $Y =9.00 $  &  (iv) & $X= 7.00$, $Y = 5.00 $ & (iv)  & $X= 7.50$, $Y= 4.125$\\  \hline
+		\hline (v) & $X= 7.00$, $Y= 5.75$ & (v)  & $X= 7.00$, $Y= 3.00$ & (v) & $X= 7.00$, $Y= 5.75$\\  \hline & & & & & \\
+		\hline 
+		%	\end{tabular} 
+		%	
+		%	\begin{tabular}{||c|c||c|c||c|c||}
+		\hline  & Node 2A &   & Node 2B &  & Node 2C  \\  \hline
+		\hline (i) & $X= 6.50$, $Y= 4.50$ & (i)  & $X= 7.25 $, $Y = 5.75 $  & (i)  & $X= 6.00$, $Y = 5.00$\\  \hline
+		\hline (ii)  & $X= 6.25$, $Y= 5.50$  &  (ii) &$X= 6.25$, $Y= 5.50$ & (ii) & $X= 6.625$, $Y = 5.75 $ \\  \hline
+		\hline (iii) & $X= 5.625  $, $Y = 5.00 $  &  (iii) &$X= 7.25 $, $Y = 5.25 $ &  (iii) & $X= 5.625$, $Y = 6.75$ \\  \hline
+		\hline (iv)  & $X= 7.50$, $Y = 4.75 $  & (iv) & $X= 7.00 $, $Y = 4.00 $ & (iv)  & $X= 6.00$, $Y = 6.00$\\  \hline
+		\hline (v) & $X= 7.25 $, $Y = 5.25 $ & (v) & $X= 7.50$, $Y= 4.50$  &(v) & $X= 6.00$, $Y= 6.416$\\  \hline & & & & & \\
+		\hline 
+		%		
+		%	\end{tabular} 
+		%	
+		%	\begin{tabular}{||c|c||c|c||c|c||}
+		\hline  & Node 2D &   & Node 3A &  & Node 3B   \\  \hline
+		\hline (i) & $X= 5.75$, $Y= 7.00$ &  (i) & $X= 6.125$, $Y= 2.50$  & (i)  & $X= 6.75$, $Y= 3.50$\\  \hline
+		\hline (ii)  & $X= 7.00$, $Y = 7.00$  &  (ii) & $X= 6.75$, $Y= 3.50$ & (ii) & $X= 6.25$, $Y= 5.50$ \\  \hline
+		\hline (iii) & $X= 5.625$, $Y= 6.75$  & (iii) & $X= 6.8$, $Y =3.666 $ &(iii) & $X= 6.125$, $Y= 2.50$ \\  \hline
+		\hline (iv)  & $X= 7.50$, $Y= 4.00$  & (iv) & $X= 7.2$, $Y = 2.9$ & (iv)  & $X= 6.00$, $Y= 4.50$\\  \hline
+		\hline (v) & $X= 7.00$, $Y= 6.00$ & (v) & $X= 7.00$, $Y= 3.875$  &(v) & $X= 7.00$, $Y= 3.875$\\  \hline% & & & & & \\
+		%\hline 
+		%	\end{tabular} 
+	\end{tabular} 
+
+
+\newpage
+			\begin{tabular}{||c|c||c|c||c|c||}
+		\hline  & Node 3C &   & Node 3D &  & Node 3E  \\  \hline
+	\hline (i) & $X= 5.75$, $Y= 6.75$ &  (i) & $X= 7.25$, $Y = 3.333$  & (i)  & $X= 6.00$, $Y= 6.00$\\  \hline
+	\hline (ii) & $X= 5.625$, $Y= 7.333$  & (ii) & $X= 4.833$, $Y =6.5 $ &(ii) & $X= 6.125$, $Y= 5.75$ \\  \hline
+	\hline (iii)  & $X= 7.50$, $Y= 7.125$  & (iii) & $X= 3.75$, $Y = 8.666$ & (iii)  & $X= 6.00$, $Y= 6.75$\\  \hline
+		\hline (iv)  & $X= 7.125$, $Y = 7.00$  &  (iv) & $X= 5.25$, $Y = 4.33$ & (iv) & $X= 5.75$, $Y= 5.00$ \\  \hline
+	\hline (v) & $X= 7.00$, $Y= 8.00$ & (v) & $X= 5 $, $Y= 5.50$  &(v) & $X= 7.00$, $Y= 6.00$\\  \hline & & & & & \\
+	\hline 
+		%		
+		%	\end{tabular} 
+		%	
+		%	\begin{tabular}{||c|c||c|c||c|c||}
+		\hline  &  Node 3F &  & Node 3G &   & Node 3H \\  \hline
+		\hline (i) & $X= 5.75$, $Y= 7.00$ & (i) & $X= 5.00$, $Y = 6.00$  & (i)  & $X= 6.75$, $Y= 3.50$\\  \hline
+		\hline (ii)  & $X= 7.00$, $Y = 7.00$  & (ii) & $X= 6.75 $, $Y= 3.50$ & (ii) & $X= 6.75$, $Y = 2.10$ \\  \hline
+		\hline (iii) & $X= 5.125$, $Y = 7.00 $   & (iii) & $X= 6.75$, $Y= 4.50$ &(iii) & $X= 6.75$, $Y= 3.50$ \\  \hline
+		\hline (iv)  & $X= 6.00$, $Y= 6.00$  & (iv) & $X= 6.75$, $Y= 4.50$ & (iv)  & $X= 6.00 $, $Y = 4.00$\\  \hline
+		\hline (v) & $X= 7.25$, $Y = 5.00$ & (v)  & $X= 3.666$, $Y = 8.50 $ & (v) & $X= 7.00$, $Y= 3.50$\\  \hline
+		\hline 
+		
+	\end{tabular} 
+
+\end{document}

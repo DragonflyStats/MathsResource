@@ -1,0 +1,214 @@
+\documentclass[a4paper,12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{eurosym}
+\usepackage{vmargin}
+\usepackage{amsmath}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{fancyhdr}
+
+%\usepackage{listings}
+\usepackage{amsmath,enumerate,ifthen}
+\usepackage{amssymb}
+\usepackage{framed}
+\usepackage{times}
+%\usepackage{bigints}
+
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2570}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{LastRevised=Wednesday, February 23, 2011 13:24:34}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{Language=American English}
+
+%\pagestyle{fancy}
+%\setmarginsrb{20mm}{0mm}{20mm}{25mm}{12mm}{11mm}{0mm}{11mm}
+%\lhead{MA4605} \rhead{Mr. Kevin O'Brien}
+%\chead{Chemometrics}
+%\input{tcilatex}
+
+\begin{document}
+\begin{center}
+\includegraphics[scale=0.65]{images/shieldtransparent2}
+\end{center}
+
+\begin{center}
+\vspace{1cm}
+\large \bf {FACULTY OF SCIENCE AND ENGINEERING} \\[0.5cm]
+\normalsize DEPARTMENT OF MATHEMATICS AND STATISTICS \\[1.25cm]
+\large \bf {LABORATORY EXAMINATION PAPER 2016} \\[1.5cm]
+\end{center}
+
+\begin{tabular}{ll}
+MODULE CODE: MA4605 & SEMESTER: Autumn 2016 \\[1cm]
+MODULE TITLE: Chemometrics & DURATION OF EXAM: 45 minutes \\[1cm]
+LECTURER: Mr. Kevin O'Brien & GRADING SCHEME: 20 marks \\
+& \phantom{GRADING SCHEME:} \footnotesize {20\% of module grade} \\[0.8cm]
+EXTERNAL EXAMINER: Prof. J. King & \\
+\end{tabular}
+\bigskip\begin{center}
+	{\bf INSTRUCTIONS TO CANDIDATES}
+\end{center}
+\begin{itemize} 
+	\item This exam will start at 13:05 / 14:05 , and will last 45 minutes.
+	
+	\item Each question will be worth either 5 Marks. There are 20 Marks worth of questions.
+All questions must be attempted (LENS students please see below).
+	
+	\item \textbf{IMPORTANT }Write all of your answers in the exam script. Write the script number on any other documents you submit.
+	
+%	\item You MAY ask for assistance in setting up your environment at any time throughout the exam. 
+%	\item You MUST NOT ask for assistance or advice on the subject matter in the exam.
+	\item It is your responsibility to return the script to collection box. An audit of scripts will take place immediately after the exam. If your script is account for in that audit,  you are deemed to be absent, and will receive no marks.
+	
+	\item \textbf{IMPORTANT for LENS Student:}
+	Specifically approved LENS students have to answer any 3 of the 4 questions .
+	\end{itemize}
+\newpage
+\subsection*{Question 1: Exploratory Data Analysis}
+\begin{itemize}
+	\item[(a)] Analyse the data set \texttt{X148} and answer the following questions:
+	\begin{itemize}
+		\item[(i)] (1 Mark ) What is the mean of the values of \texttt{X148}?		
+		\item[(ii)] (1 Mark) What is the 95\% confidence intervalf for the mean of the values of \texttt{X148}?		
+	\end{itemize}
+	
+	\item[(b)] The Anderson-Darling test and the Shapiro-Wilk test are two inference procedures that provide similar tests (i.e. one cab be considered an alternative to the other).
+	Perform the Shapiro-Wilk test on the data set \texttt{X148}. 
+	\begin{itemize}
+		\item[(i)] (1 Mark ) What is the null hypothesis for this test?		
+		 \item[(ii)] (1 Mark ) Interpret the p-value of this test?				
+	\end{itemize}
+	
+	
+	\item[(c)] Run the following piece of R code on dataset \texttt{X148}, and answer the questions below.
+	\begin{framed}
+	\begin{verbatim}
+	qqnorm(X148)
+	qqline(X148)
+	\end{verbatim}
+	\end{framed}
+\begin{itemize}
+	\item[(i)] (1 Mark ) Interpret the outcome of this graphical procedure for data set \texttt{X148}. \textit{(a Brief answer will suffice)}.	
+\end{itemize}
+\end{itemize}
+\newpage
+
+\subsection*{Question 2 : Regression Models}
+
+\begin{itemize}
+	\item[(a)] Consider the Response variable Y (found in data set \texttt{X208}). We wish to use the independent variable X (found in data set \texttt{X047}) to fit an explanatory model for X.
+	\begin{itemize}
+		\item[(i)] (1 Mark) Write down the regression equation for this fitted model.
+		\item[(ii)] (1 Mark) Write down the correlation coefficient for these two variable X and Y. 
+	\end{itemize}
+
+	\item[(b)] We wish to determine if a quadratic model is more appropriate in explaining Y. Hence we will use $X^2$ (found in data set \texttt{X048})
+	\begin{itemize}
+		\item[(i)] (1 Mark) Write down the regression equation for this fitted model.
+		\item[(ii)] (1 Mark) Write down the Akaike Information Criterion values for both linear models (i.e. this model, and the model from Part A). 
+		\item[(iii)] (1 Mark) Which of the two models better fits the data? Explain your answer. 
+		
+\end{itemize}
+\end{itemize}
+\newpage(SPARE)
+
+\newpage 
+\subsection*{Question 3 : One Way ANOVA for Experimental Design}
+Four analysts each made seven determinations of the paracetamol content of the same batch of tablets.
+The results are shown below. There are 28 determinations in total. 
+
+%Analyst= structure(c(1L, 2L, 3L, 4L, 5L, 6L, 1L, 2L, 3L, 4L, 5L, 6L, 1L,
+%2L, 3L, 4L, 5L, 6L, 1L, 2L, 3L, 4L, 5L, 6L, 1L, 2L, 3L, 4L, 5L,
+%6L, 1L, 2L, 3L, 4L, 5L, 6L, 1L, 2L, 3L, 4L, 5L, 6L), .Label = c("A",
+%"B", "C", "D", "E", "F"), class = "factor")
+
+%Determinations= c(84.32, 84.24, 84.29, 84.14, 84.5, 84.7, 84.61, 84.13, 84.28,
+%84.48, 83.91, 84.36, 84.64, 84, 84.4, 84.27, 84.11, 84.61, 84.62,
+%84.02, 84.63, 84.22, 83.99, 84.15, 84.51, 84.25, 84.4, 84.22,
+%83.88, 84.17, 84.63, 84.41, 84.68, 84.02, 84.49, 84.11, 84.51,
+%84.3, 84.36, 84.33, 84.06, 83.81)
+
+\begin{center}
+	\begin{tabular}{|c|ccccccc|}
+		\hline
+		Analyst	& Content		&		&		&		&		&		&		 \\ \hline
+		A	&	84.32	&	84.61	&	84.64	&	84.62	&	84.51	&	84.63	&	84.51	 \\
+		B	&	84.24	&	84.13	&	84.00	&	84.02	&	84.25	&	84.41	&	84.30	 \\
+		C	&	84.29	&	84.28	&	84.40	&	84.63	&	84.40	&	84.68	&	84.36	 \\
+		D	&	84.14	&	84.48	&	84.27	&	84.22	&	84.22	&	84.02	&	84.33	 \\
+%		E	&	84.50	&	83.91	&	84.11	&	83.99	&	83.88	&	84.49	&	84.06	 \\
+%		F	&	84.70	&	84.36	&	84.61	&	84.15	&	84.17	&	84.11	&	83.81	 \\
+		\hline
+	\end{tabular}
+\end{center}
+\begin{framed}
+\begin{itemize}
+\item The samples for Analyst A,B,C and D are contained in data sets \texttt{X050},\texttt{X051},\texttt{X052} and \texttt{X053}.
+\item The aggregate data is found in data set \texttt{X054}.
+\item The grouping data is found in data set \texttt{X049}.
+\end{itemize}
+\end{framed}
+\medskip
+\begin{itemize}
+	\item[(i)] (3 Marks) Write the ANOVA table in your answer sheet. 
+	\item[(ii)] (1 Mark) What hypothesis is being considered by this procedure?
+	\item[(iii)] (1 Mark) What is the conclusion following from the above analysis? State the null and alternative hypothesis clearly.
+\end{itemize}
+\newpage(SPARE)
+\newpage
+\subsection*{Question 4 : Factorial Design}
+An experiment is run on an operating chemical process in which the aim is to reduce the
+amount of impurity produced. Three continuous variables are thought to affect impurity,
+these are concentration of NaOH, agitation speed and temperature. As an initial investigation two settings are selected for each variable these are
+
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+		Factor: &low level & highlevel  \\ \hline
+		Concentration of NaOH & $40\%$ & $45\%$\\
+		Agitation speed (rpm) & 15 & 25 \\
+		Temperature ($^{\circ}{\rm F}$) & 170 & 200 \\
+		\hline
+	\end{tabular}
+\end{center}
+Readings were recorded of the impurity produced from the chemical process for each combination of the levels of these factors, and each combination was tested twice.
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+	\hline
+	% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+	Conc NaOH & Agitation & Temperature & Impurity \\
+	C & A &T &y \\ \hline 
+	-	&	-	&	-	&	 39,34	\\
+	+	&	-	&	-	&    40,47	\\
+	-	&	+	&	-	&	 23,34	\\
+	+	&	+	&	-	&	 25,36	\\
+	-	&	-	&	+	&	 75,89  \\
+	+	&	-	&	+	&	 61,75	\\
+	-	&	+	&	+	&	 59,43	\\
+	+	&	+	&	+	&	 21,20\\
+	\hline
+\end{tabular}
+\end{center}
+\begin{framed}
+\noindent For the sake of brevity and clarity - type the following before carrying out your analysis
+	\begin{verbatim}
+	C = X061
+	A = X062
+	T = X063
+	y = X064
+	\end{verbatim}
+\end{framed}
+	\begin{itemize}
+		\item[(i)] (2 Marks) Complete the ANOVA table - For the sake of brevity, you may omit the SS and MS columns.
+		\item[(ii)] (1 Mark) State which of the main effects are significant
+		\item[(ii)] (1 Mark) State which of the interaction effects are significant
+		\item[(iv)] (1 Mark) Sketch the Interaction Plot between Agitation and Temperature. Comment on this plot.
+		%(1 Marks) Write down a  regression equation that can be used predicting impurity based on the results of this experiment.
+	\end{itemize}
+\newpage(SPARE)
+\end{document}

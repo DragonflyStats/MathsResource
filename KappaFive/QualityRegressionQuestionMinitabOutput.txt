@@ -1,0 +1,37 @@
+Regression Analysis: Tensile versus Knots 
+
+Analysis of Variance
+
+Source         DF  Adj SS   Adj MS  F-Value  P-Value
+Regression      1  68.026  68.0256    31.49    0.000
+  Knots         1  68.026  68.0256    31.49    0.000
+Error          12  25.927   2.1605
+  Lack-of-Fit  10  24.927   2.4927     4.99    0.179
+  Pure Error    2   1.000   0.5000
+Total          13  93.952
+
+
+Model Summary
+
+      S    R-sq  R-sq(adj)  R-sq(pred)
+1.46988  72.40%     70.10%      61.30%
+
+
+Coefficients
+
+Term        Coef  SE Coef  T-Value  P-Value   VIF
+Constant   1.016    0.790     1.29    0.223
+Knots     0.3640   0.0649     5.61    0.000  1.00
+
+
+Regression Equation
+
+Tensile = 1.016 + 0.3640 Knots
+
+
+Fits and Diagnostics for Unusual Observations
+
+Obs  Tensile    Fit   Resid  Std Resid
+  9    5.200  7.932  -2.732      -2.09  R
+
+R  Large residual

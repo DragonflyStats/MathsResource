@@ -1,0 +1,14 @@
+Two-Sample T-Test and CI: Measurement, Factory 
+
+Two-sample T for Measurement
+
+Factory      N     Mean  StDev  SE Mean
+FactoryA  2400  1002.60   1.76    0.036
+FactoryB  2600  1002.72   1.64    0.032
+
+
+Difference = µ (FactoryA) - µ (FactoryB)
+Estimate for difference:  -0.1248
+95% upper bound for difference:  -0.0456
+T-Test of difference = 0 (vs <): T-Value = -2.59  P-Value = 0.005  DF = 4998
+Both use Pooled StDev = 1.7011

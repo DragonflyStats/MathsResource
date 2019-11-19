@@ -1,0 +1,459 @@
+\documentclass[12pt]{article}
+%\usepackage[final]{pdfpages}
+
+\usepackage{graphicx}
+\graphicspath{{/Users/kevinhayes/Documents/teaching/images/}}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+\newcommand{\bbr}{\Bbb{R}}
+\newcommand{\zn}{\Bbb{Z}^n}
+
+%\usepackage{epsfig}
+%\usepackage{subfigure}
+\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{amsthm}
+\usepackage{natbib}
+\usepackage{amsbsy}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{eurosym}
+%\usepackage{beamerarticle}
+\usepackage{txfonts}
+\usepackage{fancyvrb}
+\usepackage{fancyhdr}
+\usepackage{natbib}
+\bibliographystyle{chicago}
+
+\usepackage{vmargin}
+% left top textwidth textheight headheight
+% headsep footheight footskip
+\setmargins{2.0cm}{2.5cm}{16 cm}{22cm}{0.5cm}{0cm}{1cm}{1cm}
+\renewcommand{\baselinestretch}{1.3}
+
+
+\pagenumbering{arabic}
+\begin{document}
+	\thispagestyle{empty}
+	
+	% ******* Title page *******
+	% **************************
+	\def\marks#1{\marginpar{#1}}	
+
+	\def\modcode{MS4315}
+	\def\modtitle{Operations Research 2}
+	\def\examiner{Dr. M. Burke \& Mr. \ K.\ O'Brien }
+	\def\term{Summer 2016/7}%
+	%Annual Repeats 2014}
+	\def\duration{2$\frac{1}{2}$ hours}
+	\def\percentage{100\%}%75\%}
+	\def\extern{Prof. J. King}%Prof.\ Brendan Murphy}
+	\def\instructions{\bf \\
+		Answer two questions from Section A (Q1--Q3) and two questions from Section B (Q4--Q6).\\
+        Use separate answer books for the two sections.\\
+		All questions carry equal marks.}
+	
+	\def\examtitle{\hsize 6.5true in
+		\begin{center}
+			{    \Large UNIVERSITY \textit{of} LIMERICK }\\
+			\textsc{OLLSCOIL LUIMNIGH}
+		\end{center}
+		
+		\begin{center}
+			Faculty of Science and Engineering
+		\end{center}
+		
+		\hfill \\ \\
+		
+		\begin{tabular}[h]{ll}
+			{\bf END OF SEMESTER ASSESSMENT PAPER}\\ \\
+			\small MODULE CODE: \modcode&\small SEMESTER: \term \\ \\
+			\small MODULE TITLE: \modtitle&\small DURATION OF EXAMINATION: \duration \\ \\
+			\small LECTURER: \examiner&\small PERCENTAGE OF TOTAL MARKS: \percentage \\ \\
+			\small EXTERNAL EXAMINER: \extern \\ \\
+			\multicolumn{2}{l}{
+				\begin{minipage}[h]{15.5cm}
+					INSTRUCTIONS TO CANDIDATES: \instructions
+				\end{minipage}}
+			\end{tabular}
+		}
+		
+		\hspace{2.8in}\includegraphics[width=0.7in]{shieldtransparent2.jpg}
+		\examtitle
+		
+		
+		
+		\newpage
+		
+		%\renewcommand\theenumi{(\alph{enumi})}
+		%%renewcommand\theenumii{\roman{enumii}}
+		%\def\modcode{MA4007}
+		%\def\modtitle{Experimental Design}
+		%\def\examiner{Dr.~K.~Coffey }
+		%\def\term{Autumn 2010}
+		
+		\pagestyle{fancy} \setcounter{page}{1}
+		\renewcommand{\headrulewidth}{0.4pt}
+		\renewcommand{\headsep}{20pt}
+		\lhead{\modcode \quad \modtitle \qquad \examiner} \chead{}
+		\rhead{\term \setlength{\unitlength}{\baselineskip}}
+		
+		
+		
+		
+		\newpage
+		%==================================%
+        \begin{center} \section*{Section A} \end{center}
+
+        %==================================%
+        \subsection*{Question 1}
+        % IEDS
+        \begin{enumerate}
+
+        \item[(a)] In terms of a strategic (matrix) game, define what is meant by a dominant strategy and a dominated strategy? Describe the technique of iterated elimination of dominated strategies. What is the technique used for ? \marks{5 \%}
+        \item[(b)] By removing all strategies which are dominated by strict pure or mixed strategies, derive a reduced version of the following 2-player matrix game:
+
+       \begin{center}
+
+       \begin{tabular}{|c|c|c|c|}
+       \hline
+       & S        &T       & U    \\
+       \hline
+        A & (5,3) & (1,2) & (2,1) \\
+       \hline
+        B &(1,-1)& (0,0)& (3,-3) \\
+       \hline
+        C & (2,-2) & (3,0)& (6,3) \\
+       \hline
+       \end{tabular}
+
+
+       \end{center} \marks{10 \%}
+
+       \item[(c)] Find all the \textit{Nash} Equilibria of the above game.\marks{10 \%}
+
+       \end{enumerate}
+
+       %===================================%
+       \subsection*{Question 2}
+
+       % game tree - extensive form
+
+       \item In a game show, contestants M\'{a}ire and S\'{e}amus start the last round with \euro{500} and \euro{400} respectively. Each must decide to pass or play. If a player passes, they keep their money but if they opt to play they win or lose \euro{200} each with probability 1/2. These outcomes are independent of each other. The player with the most money at the end of the round gets a bonus of \euro{300}.
+        \begin{enumerate}
+        \item[(a)] If M\'{a}ire goes first and S\'{e}amus sees her move, draw the game tree. \marks{9 \%}
+        \item[(b)] Show that the strategic form of the game is
+
+        \begin{center}
+
+        \begin{tabular}{|c|c|c|}
+        \hline
+        & Pass         &Play       \\
+        \hline
+        Pass & (8,4) &$\left(\frac{13}{2}, \frac{11}{2}\right)$  \\
+        \hline
+        Play & $\left(\frac{13}{2}, \frac{11}{2}\right)$& $\left(\frac{29}{4}, \frac{23}{4}\right)$ \\
+        \hline
+        \end{tabular}
+        \end{center}
+        where payoffs are expected values in 00's. \marks{8 \%}
+
+        \item[(c)] Solve the game. \marks{8 \%}
+        \end{enumerate}
+
+
+
+       %===================================%
+       \subsection*{Question 3}
+
+       % Duopoly
+
+       \item
+    \begin{enumerate}
+    \item[(a)] The costs incurred by a firm in a production period are $$ c = 50 + 2x$$ where $x$ is the number of items produced in that period. The items sell at a price of $$ p = 14- \frac{x}{50}$$ each. Find the level of production that maximises the firm's profits when the firm has a monopoly. \marks {6 \%}
+    \item[(b)]   If two identical firms supply the market with $x_i, \; i = 1,2$ items each at a cost per period of $$c_i = 50 + 2x_i$$ respectively and sell each item at a price of $$p = 14 - \frac{x_1 +x_2}{50},$$ analyse the resulting one shot \textit{Cournot} game. \marks{9 \%}
+    \item[(c)]  If this 2-firm game is to be played repeatedly, consider the following ``cooperative'' strategy: a firm produces half of the optimal level associated with a monopoly (see part (a) for as long as the other firm does the same, and if the other firm deviates, it reverts to the single shot \textit{Cournot} strategy thereafter. Does it ever pay to defect from the cooperative strategy? In particular, using the discount factor $\omega$ per period, when is this cooperative strategy a \textit{Nash} equilibrium ?  \marks{ 10 \%}
+    \end{enumerate}
+
+
+
+      \newpage
+
+		%==================================%
+		\begin{center}  \section*{Section B} \end{center}
+
+        %==================================%
+		\subsection*{Question 4}
+		% Algorithms
+		\begin{itemize}
+			%================================================================================%
+			\item[(a)]
+\begin{enumerate}[(i)]
+\item Explain briefly why the following strategy for the solution of Integer
+Linear Programs (IP’s) is not useful: ``Solve the Linear Program (LP) relaxation
+then round off the components of the solution to the nearest integers". \marks{3 \%  }
+\item Given an LP (the \emph{Primal} problem) we can write a closely related LP, its \emph{Dual}:
+\begin{eqnarray*}
+										z &=& \max\{c^T x : Ax \le b,  x \in \mathbb{R}^n, x \ge 0 \}\quad \emph{Primal}\label{eq:lp-primal-1}\\
+										w&=&    \min \{b^T  y : A^T y  \ge c,  y \in \mathbb{R}^m, y  \ge 0\}. \quad\emph{Dual}\label{eq:lp-dual-1}
+\end{eqnarray*}
+Prove the Weak Duality Theorem: for \emph{any} primal feasible
+point $x$ and \emph{any} dual feasible point $y$, $$ b^T y \ge c^T x$$.\marks{4 \%}
+\end{enumerate}	
+			%================================================================================%
+			\item[(b)]
+			
+			ERBIZAKIP Investments is considering investments into 6 projects: A, B, C, D, E and F.
+			
+			Each project has an initial cost (in millions of euro), an expected profit rate (one year from now) expressed as a
+			percentage of the initial cost, and an associated risk of failure.
+			These numbers are given in the table below:
+			
+			\begin{center}
+			\begin{tabular}{|c||c|c|c|c|c|c|}
+				\hline  & A & B & C & D & E & F \\
+				\hline Initial Cost & 1.8 & 1.5 & 1.1 & 1.8 & 2.1 & 3.2 \\
+				\hline Profit Rate & 11\% & 13\% & 10\% & 12\% & 11\% & 9\% \\
+				\hline Failure Risk & 6\% & 4\% & 5.5\% & 5\% & 4.5\%  & 4.5\%\\
+				\hline
+			\end{tabular}
+		\end{center}
+			\begin{enumerate}[(i)] \item  Provide a formulation to choose the projects that maximize total
+				expected profit, such that ERBIZAKIP Investments does not invest more than
+				5 million euro and its average failure risk is not over 5\%.
+				
+				You may assuming equal weighting for each project when determining average risk.
+                For example, if ERBIZAKIP Investments invests only in A,B and C, it invests $1.8 + 1.5 + 1.1 =
+				 4.4$ million euro and its average failure risk is $(6\%+4\% +5\%)/3=5\%$.\marks{4 \%}
+				
+				\item Suppose that if C is chosen, D must be chosen. Modify your
+				formulation.\marks{2 \%}
+			%	\item Suppose that if E is chosen, F must not be chosen. Modify your
+			%	formulation.\marks{2\%}
+				\item   Suppose that if A and C are chosen, D must be chosen. Modify your
+				formulation.\marks{2 \%}
+				\item Suppose that only two projects, at most, can be chosed from A, B and C.  Modify your
+				formulation.\marks{2 \%}
+			\end{enumerate}
+	
+			%------------------------------------------------------------%
+			\item[(c)]
+			\begin{enumerate}[(i)]
+
+				
+							\item Provide a short description of the Dynamic Programing Paradigm.  \marks{4 \%}
+							\item What is a Greedy Algorithm? Support your answer with a simple example, and discuss the advantages and disadvantages of using Greedy Algorithms.   															\marks{2 \%}
+								\item In the context of the design of algorithms, describe the Divide and Conquer paradigm. \marks{2 \%  }
+			\end{enumerate}
+			%------------------------------------------------------------%
+
+		\end{itemize}
+		
+		%================================================================================================%
+		\subsection*{Question 5}
+		
+		%% Simplex Tableau
+		
+		\begin{itemize}
+	
+			
+			\item[(a)]
+			\begin{enumerate}[(i)]
+				\item Big O-notation is used to classify algorithms according to their relative complexity. Compare the complexity of algorithms of order $\mathrm{O}(\log n)$, $\mathrm{O}(n)$, $\mathrm{O}(n\log n)$, $\mathrm{O}(2^n)$ and $\mathrm{O}(n!)$. Illustrate your answer with a sketch. \marks{3 \%}
+			%	\item Classify the Binary Search Tree algorithm using Big $\mathrm{O}$-notation. Justify your answer. \marks{2 \%}
+				\item Compare and contract Big O-Notation, Big Omega Notation and Big Theta Notation. \marks{2 \% }
+			
+				\item What is meant by Combinatorial Explosion? Why is it relevant for Binary Integer Problems? \marks{2 \%  }
+ 													
+			\end{enumerate}
+			
+			
+	
+			%------------------------------------------------------------%
+			\item[(b)]  Consider the Integer Linear Program (IP):
+			\begin{eqnarray*}
+				\max 5 x_1 +4 x_2\\
+				x_1+x_2&\le 5\\
+				10x_1+6x_2 &\le 45\\
+				x_1, x_2 \le 0 \, \text{and integer.}
+			\end{eqnarray*}
+The corresponding Simplex Tableau (transforming the max problem into a min problem)  is:
+			\begin{center}
+			\begin{tabular}[h]{|l|rrrr|}\hline
+				0&-5&-4&0&0\\\hline
+				5&1&1&1&0\\
+				45&10&6&0&1\\\hline
+			\end{tabular}
+	\end{center}
+		
+			{\bf N.B. The Simplex Method and the Dual Simplex Method are stated on the last page  of this paper.}
+			
+			\begin{enumerate}[(i)]
+				\item Apply one iteration of the Simplex Method and show that the  Simplex Tableau now takes the form:\marks{4 \%}
+				\begin{center}
+				\begin{tabular}[h]{|l|rrrr|}\hline
+					22.5&0&-1&0&0.5\\\hline
+					0.5&0&0.4&1&-0.1\\
+					4.5&1&0.6&0&0.1\\\hline
+				\end{tabular}
+				\end{center}
+				\item After a second iteration of  the Simplex Method the  Simplex Tableau now takes the form: ({\bf N.B. Do not perform the arithmetic!})
+				\begin{center}
+				\begin{tabular}[h]{|l|rrrr|}\hline
+					23.75     &        0            & 0&          2.5&          0.25\\\hline
+					1.25&             0&          1&          2.5&         -0.25\\
+					3.75&          1&             0&         -1.5&          0.25\\\hline
+				\end{tabular}
+				\end{center}
+				Explain why this Tableau is optimal.\marks{1 \%}
+				\item The solution to the LP Relaxation of the IP is $x_1=3.75, x_2=1.25$. 		
+				Suppose that we decide to branch on $x_1$. The two branches are $S_0: x_1 \le 3$ and $S_1: x_1 \ge 4$.
+
+			\medskip Consider the branch  $S_0: x_1 \le 3$.
+				\begin{enumerate}
+					\item First show that the basic variable $x_1$ may be expressed in terms of the non-basic variables $x_3$ \& $x_4$ as: $x_1 =3.75+1.5 x_3 -0.25 x_4$.\marks{2 \%}
+					\item Substitute this expression for $x_1$ into the $S_0$ branch constraint and show that it takes the form $1.5 x_3-0.25 x_4 +s=-0.75$. (The variable $s$ is the slack variable for the constraint $x_1 \le 3$.)\marks{1 \%}
+					\item Show that the  Simplex Tableau with the addition of this constraint takes the form:\marks{1 \%}
+					\vspace{10pt}
+					
+					\begin{center}
+					\begin{tabular}[h]{|l|rrrrr|}\hline
+						23.75     &        0            & 0&          2.5&          0.25&0\\\hline
+						1.25&             0&          1&          2.5&         -0.25&0\\
+						3.75&          1&             0&         -1.5&          0.25&0\\
+						-0.75&0&0&1.5 &-0.25&1\\ \hline
+					\end{tabular}
+					\end{center}
+			
+				\item Explain why this tableau is optimal but infeasible.\marks{1 \%}
+				\item Apply {\bf one} iteration of the Dual Simplex Method to this tableau and show that  the  Simplex Tableau now takes the form:\marks{4 \%}
+				\begin{center}
+				\begin{tabular}[h]{|l|rrrrr|}\hline
+					23            & 0 &            0 &         4         &    0&          1\\ \hline
+					2    &         0 &         1&          1       &      0&         -1\\
+					3     &     1  &           0 &            0&             0  &        1\\
+					3      &       0   &          0     &    -6&          1   &      -4\\\hline
+				\end{tabular}
+				\end{center}
+				\smallskip
+				
+				\item This tableau is LP optimal and integer feasible. Explain why. What is the solution to the IP?\marks{2 \%}
+				\item Finally, {\bf suppose} that we had started with the branch $S_1: x_1 \ge 4$, expressed  $x_1$ in terms of the non-basic variables $x_3$ \& $x_4$ as $x_1 =3.75+1.5 x_3 -0.25 x_4$ as above and applied the Dual Simplex method to the resulting tableau.\\
+				\smallskip
+				We would have found  ({\bf N.B. Do not perform the arithmetic!})
+				\begin{center}
+				\begin{tabular}[h]{|l|rrrrr|}\hline
+					23.33       &      0&             0&             0&          0.67&          1.67\\ \hline
+					0.83&             0&          1&             0&          0.17&          1.67\\
+					4 &         1 &            0 &            0 &            0 &        -1\\
+					0.17  &           0  &           0  &        1  &       -0.17  &       -0.67\\\hline
+				\end{tabular}
+				\end{center}
+				\begin{enumerate}
+					\item
+					This tableau is now optimal. Is the solution integer?\marks{1 \%}
+					\item What would be the next branch \& bound step? \marks{1 \%} ({\bf N.B. Do not perform the arithmetic!})
+				\end{enumerate}
+					\end{enumerate}
+		\end{enumerate}
+			
+	\end{itemize}
+
+				%================================================================================================%
+				\subsection*{Question 6}
+				
+				%% Solution Grid Tableau
+				
+				\begin{itemize}
+					%------------------------------------------------------------%
+					\item[(a)]
+					Maximize P = 12x+7y
+					
+					subject to
+					
+					\begin{tabular}{cl}
+						
+						\phantom{space}
+						\phantom{space} & 5x + 3y $\leq$ 175\\
+						& 5x  + 4y $\leq$ 185\\
+						& x $\leq$ 35\\
+						& x $\leq$ 27\\
+						& x,y $\geq$ 0\\
+						& x,y integers\\
+						
+					\end{tabular}
+					
+					\smallskip
+					This Integer Program is to be solved using the tabular Branch and Bound method.
+					
+					\newpage
+					Use the solution grids below to solve the problem. Each node is referenced by its tree level, ordered from left to right so that the annotation {\bf Node XY} is the node at level {\bf X} at position {\bf Y} where ${\bf Y}=A$ is the left-most position in level {\bf X}, where ${\bf Y}=B$ is the 2nd from the left in level {\bf X}, and so on.
+					
+					{\bf You must draw an enumeration tree/diagram to keep track of your progress. Draw the enumeration tree on an otherwise blank page.}
+					
+					\marks{25\%}
+					
+					
+					
+					
+					
+				\end{itemize}
+				
+				
+				\normalsize	
+				\begin{tabular}{||c|c||c|l||c|l||}
+					\hline  & Node 0 &   & Node 1A &  & Node 1B     \\  \hline
+					\hline (i) & $x= 27.50$, $y= 12.50$ & (i) & $x= 27.50$, $y = 12.50$ &  (i)  & $x= 26.60$, $y= 13.00$\\  \hline
+					\hline (ii)  & $x= 27.00$, $y =12.50 $  &  (ii) & $x= 27.00$, $y = 13.50$ & (ii) & $x= 26.60$, $y = 13.50 $ \\  \hline
+					\hline (iii) & $x= 28.20$, $y = 11.40$  & (iii) & $x= 25.60$, $y = 12.70 $ & (iii) & $x= 25.70$, $y = 14.50$ \\  \hline
+					\hline (iv)  & $x= 28.50$, $y = 13.50$  &  (iv) & $x= 27.00$, $y = 12.00$  & (iv)  & $x= 28.50$, $y= 13.75$\\  \hline
+					\hline (v) & $x= 27.00$, $y = 13.50$ & (v)  & $x= 28.00$, $y= 11.00$ & (v) & $x= 27.00$, $y = 11.00$\\  \hline & & & & & \\
+					\hline
+		
+					\hline  & Node 2A &   & Node 2B &  & Node 2C  \\  \hline
+					\hline (i) & $x= 26.00$, $y= 13.75$ & (i)  & $x= 26.25 $, $y = 11.30 $  & (i)  & $x= 27.00$, $y = 14.75$\\  \hline
+					\hline (ii)  & $x= 27.25$, $y = 13.50$  &  (ii) &$x= 27.25$, $y = 11.50$ & (ii) & $x= 26.75$, $y = 14.00 $ \\  \hline
+					\hline (iii) & $x= 25.75  $, $y = 11.00 $  &  (iii) &$x= 24.25 $, $y = 12.25 $ &  (iii) & $x= 25.75$, $y = 13.50$ \\  \hline
+					\hline (iv)  & $x= 24.50$, $y = 11.60 $  & (iv) & $x= 28.60 $, $y = 12.80 $ & (iv)  & $x= 25.80$, $y = 16.00$\\  \hline
+					\hline (v) & $x= 28.25 $, $y = 13.25 $ & (v) & $x= 28.00$, $y= 11.00$  &(v) & $x= 26.00$, $y = 13.75$\\  \hline & & & & & \\
+					\hline
+							\end{tabular}
+									\newpage	
+								\begin{tabular}{||c|c||c|c||c|c||}
+								
+					
+					\hline  & Node 2D &   & Node 3A &  & Node 3B   \\  \hline
+					\hline (i) & $x= 26.90$, $y= 15.125$ &  (i) & $x= 27.125$, $y= 14.75$  & (i)  & $x= 26.30$, $y= 11.50$\\  \hline
+					\hline (ii)  & $x= 27.00$, $y= 12.50$  &  (ii) & $x= 26.50$, $y= 14.50$ & (ii) & $x= 27.25$, $y = 15.50$ \\  \hline
+					\hline (iii) & $x= 27.00$, $y = 13.40$  & (iii) & $x= 27.40$, $y =14.00 $ &(iii) & $x= 27.25$, $y= 12.50$ \\  \hline
+					\hline (iv)  & $x= 27.00$, $y= 12.90$  & (iv) & $x= 26.00$, $y = 12.90$ & (iv)  & $x= 27.10$, $y= 13.50$\\  \hline
+					\hline (v) & $x= 27.50$, $y= 14.10$ & (v) & $x= 26.90$, $y= 14.125 $  &(v) & $x= 26.00$, $y= 11.25$\\  \hline & & & & & \\
+					\hline
+					%	\end{tabular}
+					%	
+					%	\begin{tabular}{||c|c||c|c||c|c||}
+					\hline  & Node 3C &   & Node 3D &  & Node 3E  \\  \hline
+					\hline (i) & $x= 25.20$, $y = 16.10$ &  (i) & $x= 28.25$, $y = 13.60$  & (i)  & $x= 27.00$, $y = 12.00$\\  \hline
+					\hline (ii) & $x= 25.75$, $y= 18.50$  & (ii) & $x= 30.40$, $y =17.50 $ &(ii) & $x= 27.750$, $y = 15.80$ \\  \hline
+					\hline (iii)  & $x= 28.50$, $y= 28.125$  & (iii) & $x= 23.00$, $y = 18.00$ & (iii)  & $x= 26.00$, $y = 13.00$\\  \hline
+					\hline (iv)  & $x= 28.125$, $y= 14.5$  &  (iv) & $x= 25.25$, $y = 15.333$ & (iv) & $x= 25.00$, $y = 15.80$ \\  \hline
+					\hline (v) & $x= 28.60$, $y= 11.20$ & (v) & $x= 25.00 $, $y = 12.60$  &(v) & $x= 22.60$, $y = 16.70$\\  \hline & & & & & \\
+					\hline
+					%		
+					%	\end{tabular}
+					%	
+					%	\begin{tabular}{||c|c||c|c||c|c||}
+					\hline  &  Node 3F &  & Node 3G &   & Node 3H \\  \hline
+					\hline (i) & $x= 25.80$, $y= 14.00$ & (i) & $x= 25.40$, $y = 14.25$  & (i)  & $x= 24.60$, $y= 14.80$\\  \hline
+					\hline (ii)  & $x= 25.80$, $y = 14.60$  & (ii) & $x= 27.50 $, $y= 15.50$ & (ii) & $x= 22.30$, $y = 14.10$ \\  \hline
+					\hline (iii) & $x= 25.25$, $y= 14.50 $   & (iii) & $x= 27.40$, $y= 13.50$ &(iii) & $x= 22.30$, $y= 14.50$ \\  \hline
+					\hline (iv)  & $x= 26.10$, $y = 11.60$  & (iv) & $x= 27.30$, $y= 13.50$ & (iv)  & $x= 22.60 $, $y = 14.60$\\  \hline
+					\hline (v) & $x= 25.40$, $y = 14.90$ & (v)  & $x= 23.90$, $y = 16.50 $ & (v) & $x= 21.70$, $y= 14.50$\\  \hline
+					\hline
+					& & & & & \\ \hline
+				\end{tabular}
+			\end{document}
+			
