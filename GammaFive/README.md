@@ -1,2 +1,0 @@
-# DunnSEME
-Graham Dunn SEME
