@@ -1,9 +1,0 @@
-Tukey Pairwise Comparisons 
-
-Grouping Information Using the Tukey Method and 95% Confidence
-
-District  N    Mean  Grouping
-D         8  34.900  A
-C         8  34.100  A
-B         8  31.100    B
-A         8  30.700    B
